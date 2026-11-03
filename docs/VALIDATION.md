@@ -1,6 +1,6 @@
 # Validation performed on 2026-11-03
 
-The prepared local project reproduced the current 37-candidate paper analysis. Results below are from actual local executions, not inferred from the presence of archived tables. **These executions used data retained locally by the authors. The public code-only checkout does not include that dataset or its reference predictions and cannot reproduce the results until authorized inputs are supplied.**
+The prepared local project reproduced the current 37-candidate paper analysis. Results below are from actual local executions, not inferred from the presence of archived tables. These original executions used the authors' retained data. The owner has since confirmed publication permission; metadata/features/reference outputs are now in Git and all 92 original images are available through the complete Release ZIP. See [DATA_RELEASE.md](DATA_RELEASE.md) for the subsequent distribution validation.
 
 ## Numerical results
 
@@ -64,8 +64,8 @@ The original numerical engines for selection, regression and baselines remain by
 
 ## Scope not claimed
 
-The retained inputs needed for the primary 37-feature study are present. No missing primary RGB file, target value or model implementation was found. Separate field notebooks or a signed redistribution permission record were not supplied.
+The retained inputs needed for the primary 37-feature study are present. No missing primary RGB file, target value or model implementation was found. Separate field notebooks are not included. Publication permission has subsequently been confirmed by the repository owner; no separate approval document is fabricated.
 
 Additional spatial and ROI analyses can be refitted from the included feature matrices. Their separate raw-pixel construction workflows, historical manual QC and additional bootstrap reporting are not exposed as supported reproduction commands here. Archived ROI pixel-validation reports are marked as historical evidence; they are not fresh extraction results from this preparation. Only Figure 7 is packaged as a figure entry point. The manuscript LaTeX and PDFs are outside this project and were not edited.
 
-Redistribution permission, code/data licenses, permanent repository addresses and a final published citation remain unresolved. Pattern-based path/credential screening cannot prove that every possible secret has been found, and unchanged image metadata still requires the same rights review as the original images.
+Publication permission and repository/data download addresses have subsequently been resolved; general reuse licenses, DOI records and the final published citation remain unspecified. Pattern-based path/credential screening cannot prove that every possible secret has been found, and unchanged image metadata still requires the same rights review as the original images.

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "images": 92,
+  "strips": 552,
+  "color_features": 34,
+  "raw_hashes_verified": true,
+  "strip_color_features_bitwise_equal": true,
+  "ROI_direct_vs_weighted_max_abs": 2.1316282072803006e-14,
+  "zero_pixels_retained": true,
+  "spatial_operators_executed_on_ROI": false,
+  "runtime": {
+    "python": "3.9.18",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "opencv": "4.11.0"
+  },
+  "seconds": 264.4588325023651
+}

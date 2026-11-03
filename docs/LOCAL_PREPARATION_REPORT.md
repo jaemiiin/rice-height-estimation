@@ -1,6 +1,6 @@
 # Local preparation report (historical snapshot)
 
-This report describes the completed local assembly before GitHub publication. The subsequent code-only release scope is documented in [PUBLIC_RELEASE.md](PUBLIC_RELEASE.md). References to all 236 source entries and 53 generated files below describe the full local snapshot; its complete inventories are now retained under ignored `.local/pre-public-release/`. Public provenance records contain only released code/documentation.
+This report describes the completed local assembly before GitHub publication. The subsequent code-only release and later approved data release are documented in [PUBLIC_RELEASE.md](PUBLIC_RELEASE.md) and [DATA_RELEASE.md](DATA_RELEASE.md). Statements below about permission-pending exclusions describe the earlier local-preparation snapshot, not the current release. References to all 236 source entries and 53 generated files below describe the full local snapshot; its complete inventories are retained under ignored `.local/pre-public-release/`. Current public provenance also includes the approved study data.
 
 This project is an independent local publication staging folder. It contains the retained data, preserved computational methods, executable experiment entries and English documentation needed to reproduce the current primary paper results. No GitHub repository, remote connection, push, external upload or license assignment was performed.
 

@@ -1,0 +1,10 @@
+﻿held_region,lambda_value,initial_selected_features,selected_features,selected_feature_count,BIC
+Andong,0.058052255160949015,start;end;complexity;mean_R;GB;BG;WI;KI;MGRVI;VEG;TCVI;VARI;COM;EVIgreen,start;end;complexity;mean_R;WI;MGRVI;VEG;COM;EVIgreen,9,301.51545664210425
+Cheorwon,0.061509857885805042,start;end;complexity;mean_R;BG;RGRI;KI;MGRVI;TCVI;VARI;COM;EVIgreen,start;end;complexity;mean_R;BG;MGRVI;COM;EVIgreen,8,300.29767782103585
+Chuncheon,0.054789011795939452,start;end;complexity;mean_R;BG;WI;KI;IPCA;MGRVI;VEG;VARI;COM;EVIgreen,start;end;complexity;mean_R;WI;KI;IPCA;MGRVI;VEG;COM,10,290.16926758079478
+Daegu,0.073168071434271995,start;end;complexity;mean_R;BG;RGRI;KI;MGRVI;TCVI;VARI;COM;EVIgreen,start;end;complexity;mean_R;BG;MGRVI;COM;EVIgreen,8,281.96190588483807
+Gyehwa,0.065173396048824273,start;end;complexity;mean_R;GB;BG;RGRI;WI;KI;MGRVI;VEG;VARI;COM;EVIgreen,start;end;complexity;mean_R;BG;RGRI;MGRVI;VEG;COM,9,285.58683029415653
+Hwaseong,0.061509857885805042,start;end;complexity;mean_R;GB;BG;RGRI;WI;MGRVI;TCVI;VARI;COM;EVIgreen,start;end;complexity;mean_R;BG;MGRVI;COM,7,300.23062533991435
+Naju,0.017225859653987874,start;end;complexity;mean_R;RB;BR;NDRBI;WI;KI;SRrgb;MGRVI;TCVI;VARI;COM;EVIgreen,start;end;complexity;mean_R;RB;BR;NDRBI;SRrgb;VARI;COM,10,239.06670248817761
+Unbong,4.1987070844439147,mean_G;mean_B;MGRVI,mean_G;mean_B;MGRVI,3,339.86610616372087
+Yesan,0.054789011795939452,start;end;complexity;mean_R;GB;BG;RGRI;WI;KI;MGRVI;VEG;VARI;COM;EVIgreen,start;end;complexity;mean_R;GB;MGRVI;VEG;COM,8,271.9966540200864

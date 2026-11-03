@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "images": 92,
+  "strips": 552,
+  "color_features": 34,
+  "candidate_features": 35,
+  "raw_hashes_verified": true,
+  "original_complexity_statements_copied_by_AST": true,
+  "strip_complexity_bitwise_equal": true,
+  "strip_max_abs_difference": 0.0,
+  "color_input_values_preserved": true,
+  "B_componentwise_Sobel_area_weighted": true,
+  "no_ROI_concatenation": true,
+  "no_start_end_in_control": true,
+  "runtime": {
+    "python": "3.9.18",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "opencv": "4.11.0"
+  },
+  "seconds": 22.658721685409546
+}

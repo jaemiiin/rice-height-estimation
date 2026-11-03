@@ -4,7 +4,7 @@ Research code for **“An Interpretable Framework for Rice Plant-Height Estimati
 
 The study estimates rice plant height from single top-view RGB images, using continuous excess-green (ExG) weighting, adaptive canopy strips, and interpretable regression. This project preserves the final 37-candidate implementation and its recorded evaluation protocol.
 
-**Public release scope:** research code, environment specifications, documentation, and aggregate validation summaries. **The RGB images, measured height labels, image-level metadata, derived feature tables, and reference prediction files are not distributed in this repository.** The images and height data were provided by the National Institute of Crop Science, Rural Development Administration; redistribution permission has not been established. Full reproduction requires a separately authorized copy of these data, for which no public download is currently provided. The authors' local working folder retains the complete data, but a Git clone does not include them. No reuse license has been assigned. See [Data and code availability](#data-and-code-availability) and [the public release scope](docs/PUBLIC_RELEASE.md).
+**Data and code release:** publication permission for the research data and code has been confirmed by the repository owner. The repository includes metadata, features and reference results; all 92 original RGB images are available in the [complete study-data ZIP](https://github.com/jaemiiin/rice-height-estimation/releases/download/data-v1.0.0/rice-height-study-data-v1.0.0.zip) on [GitHub Releases](https://github.com/jaemiiin/rice-height-estimation/releases/tag/data-v1.0.0). The ZIP contains all 214 study-data/result files with unchanged original bytes. Run `python tools/download_data.py` after cloning to install and verify them. The original numerical methods are unchanged. See [data release details](docs/DATA_RELEASE.md). No general reuse license has been assigned.
 
 ## Method overview
 
@@ -30,7 +30,7 @@ rice-height-estimation/
   config.json                    # Recorded, fixed study settings
   config/                        # Environment and optional ROI configurations
   data/
-    raw/<Region>/*.jpg            # 92 unchanged images; permission pending
+    raw/<Region>/*.jpg            # 92 unchanged images installed from the Release ZIP
     processed/                   # Five main feature matrices and fixed RGB baseline
       spatial/                   # 71 spatial-condition matrices
       roi34/, roi35/             # Optional controlled-comparison inputs
@@ -39,7 +39,7 @@ rice-height-estimation/
   experiments/                   # Supported command-line entry points
   tools/                         # Dataset, integrity, and release checks
   results/
-    reference/                   # Archived numerical targets; permission pending
+    reference/                   # Committed archived predictions and numerical targets
     runs/                        # New outputs; ignored by Git
   validation/                    # Validation summaries for this preparation
   provenance/                    # Relative source aliases, hashes, file inventories
@@ -50,7 +50,7 @@ No original manuscript, PDF, old environment, or historical working directory is
 
 ## Dataset description
 
-The following describes the retained research dataset and the files expected by the code. These data files are **not included in the public Git repository**; only directory README files are supplied.
+Metadata, processed features and reference outputs are committed to this repository. The original RGB files are distributed in the verified Release ZIP and installed into `data/raw/`; they are intentionally outside Git history.
 
 The retained dataset contains **92 images from nine regions**, six strips per image (**552 strips**), and **33 shared region-date height reference values**. The image dimensions and original file identities are preserved. Multiple images from a region-date group share the same height reference; 92 images are not 92 independent field measurements.
 
@@ -101,15 +101,25 @@ The entry points check the recorded versions. The recorded MLP seed is 7; it use
 
 ## Usage
 
-The code-only checkout supports the following checks without study data or scientific libraries (Python 3.9 or later):
+Clone the repository and install the complete approved dataset using Python 3.9 or later (the downloader uses only the standard library):
 
 ```text
-python src/verify_integrity.py --scope public
-python experiments/reproduce_main.py --help
-python experiments/extract_features.py --help
+git clone https://github.com/jaemiiin/rice-height-estimation.git
+cd rice-height-estimation
+python tools/download_data.py
+python tools/verify_dataset.py --include-raw
+python src/verify_integrity.py --scope all
 ```
 
-**All data validation, feature extraction, plotting and model reproduction commands below require the authorized data and reference files described above. They cannot complete from a public clone alone.** Do not substitute fabricated inputs for the original dataset. Once an authorized data package is available, retain the documented layout or supply `--data-root`, `--raw-root` and `--reference-root` as appropriate.
+The downloader verifies the ZIP SHA-256, all 214 file hashes and existing files before installation. It refuses to overwrite differing local data. The ZIP is **665,284,341 bytes (about 634.5 MiB)**. For a manual download, use the [complete study-data ZIP](https://github.com/jaemiiin/rice-height-estimation/releases/download/data-v1.0.0/rice-height-study-data-v1.0.0.zip); its paths start with `data/` and `results/reference/`, so extract it into the repository root. GitHub's automatic **Source code (zip)** excludes the RGB collection and is not the dataset archive.
+
+To use a ZIP already downloaded locally:
+
+```text
+python tools/download_data.py --archive path/to/rice-height-study-data-v1.0.0.zip
+```
+
+The committed feature and reference tables are sufficient for the main model analyses even before downloading the RGB ZIP. Pixel re-extraction requires the 92 images. Use the separate environments described above; `--data-root`, `--raw-root` and `--reference-root` remain available for alternate data locations.
 
 The examples below are run from the project root. Script and default input locations are resolved relative to the project, not a user's home folder. Scripts can also be called by their full path from another working directory. Each `--out` is relative to the caller's working directory and must be a **new directory**.
 
@@ -225,20 +235,21 @@ Preparation on 2026-11-03 completed the full 92-image extraction and fresh model
 
 ## Data and code availability
 
-The public repository distributes code and aggregate validation evidence. It intentionally excludes the original RGB collection, height labels, per-image metadata, features, predictions and full local runs. The complete retained data remain in the authors' local working copy and were used for the validation reported here. No source image or original research file was modified.
+- Code and tabular data: [jaemiiin/rice-height-estimation](https://github.com/jaemiiin/rice-height-estimation).
+- Versioned complete dataset: [study-data release data-v1.0.0](https://github.com/jaemiiin/rice-height-estimation/releases/tag/data-v1.0.0).
+- Direct download: [rice-height-study-data-v1.0.0.zip](https://github.com/jaemiiin/rice-height-estimation/releases/download/data-v1.0.0/rice-height-study-data-v1.0.0.zip).
+- File list, distribution and SHA-256 hashes: `provenance/data_files.json` (214 entries).
+- Archive SHA-256: `432ee5016d63426463e949f88b91a0aff90d85b16b3b2044b8e9530396475c43`.
 
-Code repository: [jaemiiin/rice-height-estimation](https://github.com/jaemiiin/rice-height-estimation). Publication of the research code was requested by the repository owner; no general reuse license or third-party data permission is implied.
+The 214 files comprise 92 original RGB images, 9 metadata files, 87 feature tables and 26 reference-result files. The 122 non-image files are committed to Git and also included in the complete ZIP. The primary 37-candidate study is separated from optional spatial and 34/35-candidate ROI experiments by the manifest's `scope` field. No study file remains withheld for lack of publication permission.
 
-**Availability placeholders:**
+The images and height references were provided by the National Institute of Crop Science, Rural Development Administration. The repository owner confirmed that data and code publication permissions had been obtained. This records the owner's confirmation without inventing a separate institutional approval document or a reuse license. No image, height value, filename, split, feature formula or evaluation rule was altered for this release.
 
-- GitHub repository URL: **https://github.com/jaemiiin/rice-height-estimation**.
-- Approved data repository URL / DOI: **TO BE ADDED**.
-- Manuscript DOI and publication details: **TO BE ADDED when assigned**.
-- Code and data licenses: **TO BE DETERMINED after rights confirmation**.
+Raw RGBs total 619.79 MiB; the largest individual original is 10.27 MiB. Git LFS and external data hosting were considered. A GitHub Release archive keeps binary imagery out of Git history and allows an ordinary HTTPS download without LFS setup or an additional service account. The archive is below GitHub's 2 GiB release-asset limit; every Git-tracked file is below the regular-Git 100 MiB limit. [GitHub file-size guidance](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) and [Release storage guidance](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) were checked on 2026-11-03. No Zenodo record or dataset DOI is claimed.
 
-The local presence of data does not establish redistribution rights. `provenance/release_candidates.txt` lists the public code/documentation files. The detailed `provenance/data_permission_pending.csv` is local-only and excluded from Git because it contains original data filenames. Public provenance and integrity records cover released code/documentation only; the complete pre-release inventories are retained under ignored `.local/`. `.gitignore` excludes the data and reference-result directories. Do not remove these exclusions or force-add the files until permission and hosting decisions are recorded. Licenses may differ between code and data.
+Generated runs/caches, installed virtual environments, transient logs and private preparation records remain excluded because they are not required release inputs. `provenance/release_candidates.txt` lists Git-tracked publication files; original RGBs are listed in `provenance/data_files.json` with distribution `release_archive`. The historical permission-pending review log remains local and is superseded by the approved data manifest.
 
-The raw images total about **620 MiB**. An approved dataset repository with a persistent identifier is a practical distribution option; unpacking the archive into `data/raw/` preserves the runnable layout. Git LFS is another option to assess after approval. GitHub currently warns for regular Git files above 50 MiB and blocks those above 100 MiB; these are per-file limits, not aggregate dataset limits. [GitHub large-file guidance](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) and [Git LFS guidance](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage) were checked on 2026-11-03. See [release preparation](docs/RELEASE_CHECKLIST.md) for the measured sizes and remaining decisions.
+Manuscript DOI and final publication details: **TO BE ADDED when assigned**. Code/data reuse licenses: **TO BE SPECIFIED by the rights holders**. Publication permission is confirmed; a general reuse license has not been chosen by this preparation.
 
 ## Citation
 

@@ -1,7 +1,7 @@
-# License status
+# Publication permission and reuse-license status
 
-The repository owner explicitly requested publication of the research code. No code reuse license or data license has been selected; inclusion in a public repository does not itself grant a general reuse license. Confirm contributor/institutional and third-party obligations before selecting a license. The imported scientific libraries are dependencies and are not bundled in this code release. No separate third-party source attribution or license notice was found in the released research-source files during the release scan; that scan does not establish the complete legal provenance of authorship.
+The repository owner confirmed that publication permissions for both the research data and code had been obtained and explicitly authorized this data release. The previously withheld 214 study files are now selected for public distribution. This statement records that confirmation; it does not invent an institutional approval letter.
 
-The original manuscript credits the National Institute of Crop Science, Rural Development Administration, for provision of the rice images and height reference data. That acknowledgement alone is not evidence of redistribution permission. Record the actual authorization and scope before changing the data exclusions.
+The original rice images and height reference data were provided by the National Institute of Crop Science, Rural Development Administration. Their attribution is retained. Input bytes, filenames, dates and measured heights remain unchanged.
 
-Installed Python packages are third-party dependencies, not research-source files to redistribute here. Local validation environments are ignored and omitted from the release candidate list.
+No general code or data reuse license has been selected by this preparation. Rights holders should specify the applicable reuse terms; no `LICENSE` has been invented. Imported scientific libraries remain separately installed dependencies, not bundled runtime packages in this repository or the data archive.

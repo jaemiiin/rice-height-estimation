@@ -3,450 +3,1218 @@
     "path": ".gitattributes",
     "bytes": 117,
     "sha256": "966749cb6f41f69c88e1cb89b447a94a0e874ed87b5038520516e9bfb6152aa7",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": ".gitignore",
-    "bytes": 668,
-    "sha256": "d0b5e1f7bf99eb75d512b1c6b3758203b29355c1b16a6a8e9440cc6511870668",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 528,
+    "sha256": "eb849b404eada4e187c8765d40b62733cad3b6e9c9dc574b3a4116d1a98846c3",
+    "release_status": "public_git"
   },
   {
     "path": "README.md",
-    "bytes": 17979,
-    "sha256": "cbd043c4234aeefb0a0915763861b7988b712bfcc241a68dc0673073d32d2f69",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 19125,
+    "sha256": "80a3e106ab6a880c1e2a0af6c148cf81b74733442d83061fb2a54a27c054a75c",
+    "release_status": "public_git"
   },
   {
     "path": "config.json",
     "bytes": 3888,
     "sha256": "8057a7d0556b120e29fd33fd23dff4188e38b11fd1f3158e2e9bec33cd19dba5",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "config/data_release.json",
+    "bytes": 762,
+    "sha256": "8d39c3cd735108770cd20b4417194db5582eafa6f7862dd4c2404d33bb17ac5f",
+    "release_status": "public_git"
   },
   {
     "path": "config/environment.json",
     "bytes": 147,
     "sha256": "2898e6243379f26d4549b96ed2eff4b96d82c1fcfd2d9cba63b29cac7a5ba767",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "config/roi34.json",
     "bytes": 456,
     "sha256": "53fee6d10330bb47e5a6180be129c4a1ef8e0c2db5e9783da404b86e87c29136",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "config/roi35.json",
     "bytes": 474,
     "sha256": "7131eee75ce0f4bd9fd30dc9b21267fd8685dc9bdc9fe909168021f923ad9b9f",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "data/metadata/README.md",
-    "bytes": 549,
-    "sha256": "d97b614baea2a5cf24d4ae7c89420d578597cb7f9dc365878078b8553b98be82",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 689,
+    "sha256": "9bc9f780d5235ccb048a7179dad27a57e941dd974e3a9679e02305801dc912fe",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/images.csv",
+    "bytes": 17652,
+    "sha256": "4b5a03a54fcd4f4b90b525933e5323b04bf4c7a9bb44296513414c80b803ba03",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/raw_image_manifest.csv",
+    "bytes": 13508,
+    "sha256": "0f080af94f32f26eee58dc492dee473b2c38747b9c70349ffc4cab4c8d2d156d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/retained_strip_coordinates.csv",
+    "bytes": 46660,
+    "sha256": "c57672de56dadba18892b643070d1611cbe4ca502a9b914cd256e6107d29a338",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/roi34_pixel_validation.json",
+    "bytes": 456,
+    "sha256": "376dc7e82f436b5fd5761d832aa4132b7881ae0ee2347f3ed218e181f12ab874",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/roi35_pixel_validation.json",
+    "bytes": 592,
+    "sha256": "bd50a943aeae3de86621270957e9d12d1e46c47e3ab80895f5ed5646c248203d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/site_date_heights.csv",
+    "bytes": 1807,
+    "sha256": "3d664c604b567ff3b90706a3eda1e09b54201e55fb1a18b7b5a44b74913e77c6",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/spatial/experiment_grid.csv",
+    "bytes": 15633,
+    "sha256": "cd1fbc5696a8a6be6dc8311be6b9deeca1fed264648c4dbbe01d4e125547b70b",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/spatial/selection_coordinates.csv",
+    "bytes": 5193867,
+    "sha256": "e9e74c35e7ae2693eca326847bedb2b85313704e83d9301e9538cc989c625843",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/spatial/selection_geometry_summary.csv",
+    "bytes": 23899,
+    "sha256": "ceddc1433e119a03dcbe909492dffe23fc6316588c5d8a3c585b13d465570783",
+    "release_status": "public_git"
   },
   {
     "path": "data/processed/README.md",
-    "bytes": 476,
-    "sha256": "a589fbe28d57137cdb850bea03ddbb28517b3025d30314dd4f4a5b181eb2b950",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 603,
+    "sha256": "8f0462e98e9e18c07521955cabfc064529ad68410f97ad43d605ab53bb073d3d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/features_continuous.csv",
+    "bytes": 442527,
+    "sha256": "075ac7f928462e356d93d171cabd22283449ad7e1e554d090b0d994d6d09a01d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/features_full.csv",
+    "bytes": 437959,
+    "sha256": "b91f1406225678638d8f391e222a2fb7ae7bbfc309ec5cc7657552eeaecf6fa5",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/features_matched.csv",
+    "bytes": 442517,
+    "sha256": "69889b9e6ee81591fffb429d4095f458191c883d8e97e2b88cfd7fba9a0e2b11",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/features_otsu.csv",
+    "bytes": 444874,
+    "sha256": "01960807e1b00fe3dc494bdb71d1013e7bf8d7aec3216de81004b57e0cc60584",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/features_raw.csv",
+    "bytes": 441073,
+    "sha256": "ece6914ad8f5821e67d8a6445147fb51d9c8e3ae61807c5769a25d5f6a2c8835",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/fixed_baseline_NExGR_continuous.csv",
+    "bytes": 46167,
+    "sha256": "d010a83fe017480a9116f2e7a042ae6a5b683f0a2cabf5998ea40aaf316e0c73",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi34/features_A.csv",
+    "bytes": 68778,
+    "sha256": "ae053afda0c2fbd0a53b4bc1236661b687ca9529e1d88634720155e489ead38f",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi34/features_B.csv",
+    "bytes": 68659,
+    "sha256": "dabb298d5bfa6297b1a5321fee99180068da96f768bdaa2102851f6e7e670e67",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi34/features_C.csv",
+    "bytes": 68661,
+    "sha256": "434e85867645e5c6ea932996619ccf25939bca26f1f0d335c7b58867bbc66b09",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi34/features_D.csv",
+    "bytes": 410683,
+    "sha256": "0afc443884d8e92eb56db51922b8f7382feef31145e8967af4c39bc7f61f3fda",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi34/features_continuous.csv",
+    "bytes": 442527,
+    "sha256": "075ac7f928462e356d93d171cabd22283449ad7e1e554d090b0d994d6d09a01d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi35/features_A.csv",
+    "bytes": 70643,
+    "sha256": "cb1b760e7395d3cbfbe8e3d4c3952114336e401ab28d920297efa42de65efb72",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi35/features_B.csv",
+    "bytes": 70524,
+    "sha256": "a1abf502520d371d76bed735cae549e050bd45e3703c89ee82f100ca2cdc2a98",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi35/features_C.csv",
+    "bytes": 70525,
+    "sha256": "437ab5b8e35bdc7150d491cf11be65b1ddb15e9634a2ae80a03dafd15f656b5a",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi35/features_D.csv",
+    "bytes": 421809,
+    "sha256": "a04cb52f18261fd2cc99dee60ccc96664d32118556f9a01eec624ac1fb3d1a0e",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/roi35/features_continuous.csv",
+    "bytes": 442527,
+    "sha256": "075ac7f928462e356d93d171cabd22283449ad7e1e554d090b0d994d6d09a01d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center4__continuous.csv",
+    "bytes": 296657,
+    "sha256": "9d62330d0fb18903738224cb3e7c2c79237ec09599ca55af2d65264e4d3ed58a",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center4__otsu.csv",
+    "bytes": 299245,
+    "sha256": "b933a718de7ca9af45a076c9f930f348b720be07eb95f885e7f27fe3f5134e37",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center4__raw.csv",
+    "bytes": 295587,
+    "sha256": "49a8affd55f3c936fe35545e35351baa30db47bc1e83b034399ffb3c4c42043e",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center5__continuous.csv",
+    "bytes": 370686,
+    "sha256": "e88d0255948a8912ca91b17a3f7c7f38f8b82b45918da154308f2b3e7e87e6b0",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center5__otsu.csv",
+    "bytes": 373885,
+    "sha256": "351a201597c82cf52c4f998817aacdf024bfddc84490cae30d462aae8ef8f5cd",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center5__raw.csv",
+    "bytes": 369392,
+    "sha256": "66b52d93669d47838da3c6f390cf5d1cea45fea785a56f22ac905633c833c232",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center6__continuous.csv",
+    "bytes": 444713,
+    "sha256": "2a98bdb7884c7eae39b1f50a81a37a9049ac2aabc36e9144b4b29c2ce7868330",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center6__otsu.csv",
+    "bytes": 448425,
+    "sha256": "42608b1a40dea7cd51d284ee88691bd11acedeba2c952b0a664b81be852e8599",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center6__raw.csv",
+    "bytes": 443115,
+    "sha256": "9121ff20a47fe90f76317a6b50fff380f13cb0b36a266a183f7e8c46dabd86df",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center8__continuous.csv",
+    "bytes": 592610,
+    "sha256": "7f40839c9abdade55039513effdac680558b0dcc9ed13e4c3624b6bceb68a2a7",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center8__otsu.csv",
+    "bytes": 597347,
+    "sha256": "374bf9402129c52d7f0e2cea49c8fc74e24e0e85419a92eed18aa6dffafc644f",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/center8__raw.csv",
+    "bytes": 590523,
+    "sha256": "32d490ff313693a8f85951d6ec74a23517a80a352f6985bca227206c46540cfe",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge10__continuous.csv",
+    "bytes": 738703,
+    "sha256": "6b8fad7c12e576b620f7d103e01594ce04f49f5669a47279a9149b0862b5b11e",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge2__continuous.csv",
+    "bytes": 147718,
+    "sha256": "8ea1e288e1afc683c30acbde4e04b1ab56e3e1f3aec700eb5ee652c717d72a7d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge3_L1_R2__continuous.csv",
+    "bytes": 221479,
+    "sha256": "313630ddaf0e3c3332296a799947288bfb9b97b29048caf7178211b9543986d7",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge3_L2_R1__continuous.csv",
+    "bytes": 221571,
+    "sha256": "6646e1c5fcb73a032718df4ed3898f341d1e9e748b4103665cd8c2128e969a82",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge4__continuous.csv",
+    "bytes": 295332,
+    "sha256": "4fcd418a81e9ebfbc281d20fd783906cf5e44213d82470bd31f374d0d5bc4e9a",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge4__otsu.csv",
+    "bytes": 296855,
+    "sha256": "63e85310c1a29cb749b889514a99c7c71f20b2afbb834bbc00fc6a2c8acd1e6f",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge4__raw.csv",
+    "bytes": 294337,
+    "sha256": "93c467852dca56d34241d94c22c4f866f2d6038840b7bc7168415090efa82202",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge5_L2_R3__continuous.csv",
+    "bytes": 369155,
+    "sha256": "137a2edd72adc0761e40cbcb784c3d5a39346092340d9c252922f36a11e191cb",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge5_L2_R3__otsu.csv",
+    "bytes": 371019,
+    "sha256": "b5dca1b828ca3b56934793d4b3f5af9896a009cf7bf9bbb178f9c3ed092d11a8",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge5_L2_R3__raw.csv",
+    "bytes": 367913,
+    "sha256": "66780ffd79d742559ab0eb6eea99aa08e7814f00e1a48394d7a7b0a0aa8f578b",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge5_L3_R2__continuous.csv",
+    "bytes": 369257,
+    "sha256": "cd181091b2a815ae446bcb3ae585ef1ec8db5f46fff80be6602df3e852333bc7",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge5_L3_R2__otsu.csv",
+    "bytes": 371263,
+    "sha256": "c81967032657d8a23e76f86642950d13c040033a98ab85da02b73ee851fb2a68",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge5_L3_R2__raw.csv",
+    "bytes": 368050,
+    "sha256": "d0762abf8d3e20ecedccb2c3952302ae585aaacba7d3cbe704121d2761ccd897",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge6__continuous.csv",
+    "bytes": 443080,
+    "sha256": "40a382909b19b72008f21986cdc6e3325170dfc6378b0a96872bdb265d0ce6bf",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge6__otsu.csv",
+    "bytes": 445427,
+    "sha256": "1944959b5e046784780280ca98a653d15083fc8a6d53b3488b45550d1aa1f0e3",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge6__raw.csv",
+    "bytes": 441626,
+    "sha256": "1b447573e3d7e318c2943fd32c4b7fe1ef621f8410186351a0afce0836b62670",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge7_L3_R4__continuous.csv",
+    "bytes": 516950,
+    "sha256": "abb9750f1ba2bd85e86c9f41b22b7fb9a828f4026eb5f5f6373d5259cde1db7b",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge7_L4_R3__continuous.csv",
+    "bytes": 516935,
+    "sha256": "fc847f70b0eeed55f1d5ee77088c9e467ee676871d8fbeed33e671de9534059d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge8__continuous.csv",
+    "bytes": 590805,
+    "sha256": "edc8acb3ec5fcdb480d038c5bd6c5ddeeb201996eab3da910b4f315ad86e6347",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge8__otsu.csv",
+    "bytes": 594042,
+    "sha256": "f9815dd4f9e2907e2d606e9c181e48edaf4c8b41a46b17fe8e01079621666596",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge8__raw.csv",
+    "bytes": 588903,
+    "sha256": "71ac1dca1806f7d62a69f81bd40d4fefea811749987a614757829e0ba2e4d03d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge9_L4_R5__continuous.csv",
+    "bytes": 664746,
+    "sha256": "e8c4ec6efe5502ba3694db874de5161e4ff54cfe7ecf92f2df6721c4c15361ab",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/edge9_L5_R4__continuous.csv",
+    "bytes": 664762,
+    "sha256": "d23b379c391e43079adc893644a166a05e39c12f0091dc70ab893306307101fe",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI4__continuous.csv",
+    "bytes": 295384,
+    "sha256": "478f1ed1e198110dc197ca86f3746856514bbb43976309db51e651c161954b2f",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI4__otsu.csv",
+    "bytes": 296911,
+    "sha256": "2b2c91b26da6cb74013c4644b6fdb8f24a56cf2b4b967992486efb020934a14f",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI4__raw.csv",
+    "bytes": 294419,
+    "sha256": "380e8ee7c81ebb020dd18ab929adc51df024f2426c0ab13391f923d936c69098",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI5_L2_R3__continuous.csv",
+    "bytes": 369293,
+    "sha256": "5a7414e71b3a95fd1654997c6b8a3b5070277aef63f3bff5489f39ea903a259f",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI5_L2_R3__otsu.csv",
+    "bytes": 371125,
+    "sha256": "2983efe24fa0c136c609dab33ea55a1b5e34ba3ef5dc31bfa37197d31cbba91b",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI5_L2_R3__raw.csv",
+    "bytes": 367979,
+    "sha256": "486c33bdedd6b7c77379623388f0d5ab1d031374bed9e71c6c0bbd2eb35974f0",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI5_L3_R2__continuous.csv",
+    "bytes": 369161,
+    "sha256": "446ff752c548d9ac28f1be385046bd63d766f1b81fde2cea8c86ab6935ef1d58",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI5_L3_R2__otsu.csv",
+    "bytes": 371113,
+    "sha256": "8b72bb463c6d79592b56e40fe584dc0e11c1f4c2d92ba71ba81f56a797f790cc",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI5_L3_R2__raw.csv",
+    "bytes": 367962,
+    "sha256": "b7d102dbad61c2513a28ad1e767a4d2a37480ef938350b1bef9ff2f48fbf86ca",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI6__continuous.csv",
+    "bytes": 443070,
+    "sha256": "1c23c25efbf3cd39c049f74e998df067d8dc951232541ddb23c657cd32493c07",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI6__otsu.csv",
+    "bytes": 445327,
+    "sha256": "289721c408d6a9ff796787c511287a1015b2a4689608ab2dd239cc1a6ef62720",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI6__raw.csv",
+    "bytes": 441522,
+    "sha256": "47dce8dd9c63974e857e5a04360a5283f03753dd360fd5f58d2d96f267e98e1c",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI8__continuous.csv",
+    "bytes": 590705,
+    "sha256": "4dd64ee5bc83e1c0139d92c6b9ca94cb0209936423a28c9c2f3297b7b4dc14ed",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI8__otsu.csv",
+    "bytes": 593783,
+    "sha256": "112ea5beebd86f5f903e2a1f3577e92e94441d603a13c2b9958c41647893d4ba",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/fixedROI8__raw.csv",
+    "bytes": 588593,
+    "sha256": "209d337d8ef618ccaebcc8bc6bb590534f7d9680700515d3bb1b09205e7aea34",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/left6__continuous.csv",
+    "bytes": 443656,
+    "sha256": "c4007c0bf64044b8f7b14fd3a32d9198d3394254618559c10dbee31d315fc6b6",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/left6__otsu.csv",
+    "bytes": 446730,
+    "sha256": "e21d9aa3f952e03bf76ee96ec45845a380ad26e36e410ef5dd87c383ba6eb63c",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/left6__raw.csv",
+    "bytes": 442407,
+    "sha256": "b988b8eb5c32969b3680e93be43232617893ef7da681120f4e2face5b99c0b88",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/prominence6__continuous.csv",
+    "bytes": 444157,
+    "sha256": "74ffa5e0ae8ec36ff5dd69d2e5d9221263584c146bee0b52bfdf3f82e1683f34",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/prominence6__otsu.csv",
+    "bytes": 447246,
+    "sha256": "0f5075fe77479d2dff2df9a7e77b87117a7ed8dc07f2a17480ad097b35d463fc",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/prominence6__raw.csv",
+    "bytes": 442673,
+    "sha256": "96395c95cce26b0700de363fb8cdbc8def7dcee3e056282df344b1ddc3f36d1e",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/right6__continuous.csv",
+    "bytes": 443389,
+    "sha256": "407ac923444463405db88937e1a0958e687dcb1e03890c60a0a061a20fff8a13",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/right6__otsu.csv",
+    "bytes": 445750,
+    "sha256": "6483ca13e349bf223412b6f7b696ff3760228389fcdbae80259b5b2d99c94042",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/right6__raw.csv",
+    "bytes": 441709,
+    "sha256": "d80d0a94752313fd4037a67b38a72995489e692e5de1fbf1231b10b9b3cd8989",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform4__continuous.csv",
+    "bytes": 295762,
+    "sha256": "e7b45432724060c9eaa682ba42e9d9dc85b26af81e3b0b1092bc4f0fb54f3292",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform4__otsu.csv",
+    "bytes": 297644,
+    "sha256": "8b26ae9ae9536fab7428f0388f4b89265102f32cf1cb4b389b22e359e201f76d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform4__raw.csv",
+    "bytes": 294775,
+    "sha256": "9a886ef5c65e7c82f33d69ac73e5887e5228fe84b11ebb4a5c966c5f88130046",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform5__continuous.csv",
+    "bytes": 369867,
+    "sha256": "211f8575ad898bcc122032c65f4982ff6c6181c9fb92a9639e4fd7d94e8cee43",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform5__otsu.csv",
+    "bytes": 372280,
+    "sha256": "4d3d97712be324a6205eacdbd70fcd054d831cfdc77f3db8ed0a3b5c6f29786e",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform5__raw.csv",
+    "bytes": 368611,
+    "sha256": "7924d7055f62f4490e8e892efbe26b4ea03095fe813d26617071b557b8000f42",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform6__continuous.csv",
+    "bytes": 443565,
+    "sha256": "81e53587080f2c46f8cb965db42b8ba24bfec3113abda08f3bacb84363f2584b",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform6__otsu.csv",
+    "bytes": 446456,
+    "sha256": "2d7aa7196009320f477c1f1dfbc0d8681ee272cafa3cb4698421c74b8b488f8f",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform6__raw.csv",
+    "bytes": 442133,
+    "sha256": "c3392c7051c6c1fbdac4797b15b67e3e541124e2f29e0cdd142eb5b37d4d0965",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform8__continuous.csv",
+    "bytes": 591596,
+    "sha256": "af2cf7ab8e37a563552529b0e529a1af1c58c4938d147492af180918335b8f10",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform8__otsu.csv",
+    "bytes": 595692,
+    "sha256": "1d5335de3aaea2a39645afbc5fb8a2d4cfa767251a87ae8493290b2ba5fba39b",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/processed/spatial/uniform8__raw.csv",
+    "bytes": 589652,
+    "sha256": "58115b4d3867fbe7b6de58d0d6cff052391f479568eec1fe0c7dc8587a4c068f",
+    "release_status": "public_git"
   },
   {
     "path": "data/raw/README.md",
-    "bytes": 525,
-    "sha256": "8abb63e8b693c62f912b799ee0b10fa55b4c7b41d38657b6e6de37f6ca39856a",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 703,
+    "sha256": "06607f1b243383e2ef9a68fcd617fc3973bea5b946fe1b9f7ba01ba9f14cd68c",
+    "release_status": "public_git"
   },
   {
     "path": "docs/CODE_MAP.md",
     "bytes": 2738,
     "sha256": "0f177f187fdf05706dd1258ee1156573216b3c959820faac6913a37c841cc09f",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "docs/DATA_DICTIONARY.md",
     "bytes": 3384,
     "sha256": "8d8484a828f4471944e23ca1a6e0cc2264e033d975a4e6c1a614612116f07d65",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "docs/DATA_RELEASE.md",
+    "bytes": 6869,
+    "sha256": "49c7fc97dbeb3561e2ccec66c78c8d50832c57c573b6e8e11c44b2cd3f3055d4",
+    "release_status": "public_git"
   },
   {
     "path": "docs/LICENSE_STATUS.md",
-    "bytes": 1133,
-    "sha256": "8e73379f235c62010b1918e62dd4093a2e1d513a7b17543a6c7d2bf91043720e",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 939,
+    "sha256": "e3442524bf31f6f6fa9d74be30d9bf56205b1a66af7a0cc91f0a6ccb70e0f1e0",
+    "release_status": "public_git"
   },
   {
     "path": "docs/LOCAL_PREPARATION_REPORT.md",
-    "bytes": 5368,
-    "sha256": "6391bb20cab7693a898487899f08fc41f6ea552d40790fc5bc6b8528c222f717",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 5554,
+    "sha256": "2a94042a596f09dcccb392f21a3660bae28813feab7cf496c709d57206c69c54",
+    "release_status": "public_git"
   },
   {
     "path": "docs/PUBLIC_RELEASE.md",
-    "bytes": 4019,
-    "sha256": "b3d5153ead60df94fecbd6b8eb33435077a4a563431b1197682320b6c6b8ddbb",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 1429,
+    "sha256": "604a1fa3aed8fdddc225af53218ae4e5df4659d236939d38fbf88688db369dc1",
+    "release_status": "public_git"
   },
   {
     "path": "docs/RELEASE_CHECKLIST.md",
-    "bytes": 4078,
-    "sha256": "a1887eceac3427aa69caa0d8335078bbb670c0d56315d6f15cf4cd312cde4d62",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 2300,
+    "sha256": "b7d5ffd0d026fbd05a5dc07692ba4d3ea1b672c6da71101d439165beb2d9358c",
+    "release_status": "public_git"
   },
   {
     "path": "docs/VALIDATION.md",
-    "bytes": 7882,
-    "sha256": "0cf43741b0d2d6cdc3d06e3b30a5d9a62dad17dca19b0f859582e600d489d3e3",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 8115,
+    "sha256": "febd3ae4b198408d30b9264fcf27c9751b33bfc8d791e1892d0dbad52df0059e",
+    "release_status": "public_git"
   },
   {
     "path": "experiments/extract_features.py",
     "bytes": 1501,
     "sha256": "9798588968e30d5c11f98edc097ab66660a4c170acb2721f32c4b6ebc719dbe1",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/make_figure7.py",
     "bytes": 285,
     "sha256": "32a708b350fc6de65aa267f902a5577aab630721a6e4d0d272b5c10ff922a7bc",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/reproduce_main.py",
     "bytes": 268,
     "sha256": "653fbd1819a650eb81703167dfc73859d554abb79dff7bfcb9aaf20504ef04da",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/reproduce_roi.py",
     "bytes": 2102,
     "sha256": "dae01190c45699eaacde8bf58dbaeba420b468ac4aeb36690ed210015a92fe3d",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/reproduce_spatial.py",
     "bytes": 273,
     "sha256": "8124f1aaf186a4f369e6045c7a58f07356cc4bfef1e2f92a3adb2c81cd8f132b",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/verify_results.py",
     "bytes": 1172,
     "sha256": "fd9279371ef687d2a87c20cfcc98eb8d474eae70f62fc757d62c867ea5df5ddd",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "provenance/copied_files.json",
-    "bytes": 11798,
-    "sha256": "0bcb6675c877711b0d69cc1fb0614137b4956d542e9c98a96fc2e2d11024b958",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 111776,
+    "sha256": "c5a861c05b1bbb177b2905f66fada1fa036a27b3e5a914f567881a1ee663d1b3",
+    "release_status": "public_git"
+  },
+  {
+    "path": "provenance/data_files.json",
+    "bytes": 56070,
+    "sha256": "fe697e86679c9dd71c89c08e9fd451d165d46fe92d6ea2b646b5e9aed759ab97",
+    "release_status": "public_git"
   },
   {
     "path": "provenance/generated_files.json",
-    "bytes": 9641,
-    "sha256": "7cb67d0cd3757ab0b3113e3cdb78955e8293ac241b8c2c1a52967c677f29c695",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 10079,
+    "sha256": "abf329757e9d2618faef48c469790b658bc1fa9b9136097f9e4d09e46acaef39",
+    "release_status": "public_git"
   },
   {
     "path": "provenance/release_candidates.txt",
-    "bytes": 2036,
-    "sha256": "afc368cfb7bab05582de1c1d3809ccbb5758db75f753d2c5c5803ba907ed8f10",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 7567,
+    "sha256": "b2eac5d53840cf5ec013849385d9dd565635d52bab7f8f0f632271add372bda6",
+    "release_status": "public_git"
   },
   {
     "path": "requirements-analysis.txt",
     "bytes": 253,
     "sha256": "6c9826c722ae1299f2c74f4dec2ef9901d71b760fd0b0ec3d1d6578fee281905",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "requirements-figures.txt",
     "bytes": 48,
     "sha256": "9b5b58ce0aaeba6b22d1b5b17e2244180c977b84ea08d9f1b5376073dde43146",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "requirements-pixels.txt",
     "bytes": 133,
     "sha256": "c2ee00bce3fedcfaa3e955d54d867b5b74bc411dd084ffdfceb1ab8e171b5a18",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "results/reference/README.md",
-    "bytes": 531,
-    "sha256": "b87ad6edbf92072d56ea281f8ac74971624084c80f6c8363d7d60d88ca1d0664",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 573,
+    "sha256": "d06dc9698142f9cb2b79ac6317d8a4c27a26330b58c506fd2d6138790d27bf6e",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/fold_selected_features.csv",
+    "bytes": 1567,
+    "sha256": "84169c993d56643bd7bf929b77ae51261f290c21e10c3367f1f8aca8c5c364c0",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/metrics.csv",
+    "bytes": 2425,
+    "sha256": "a0d65831b07bc011a8d6007e032f352581a9a3363c88ef7d4fbb1ca5e280cbf9",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/predictions.csv",
+    "bytes": 220470,
+    "sha256": "973f82402500d8ea9808ca3ee8d055fbe2f35e8f4e77968c6784865e29569173",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/primary_region_metrics.csv",
+    "bytes": 1299,
+    "sha256": "b45cc909dd114e75d61ba8950d5a5fd567fce9e0057f344206b612e9100a58f0",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/recurrence_counts.csv",
+    "bytes": 1016,
+    "sha256": "211fc183ff8b9212beb6708887692c9200aac4d99ee7531c52aeb8ad611b2d4c",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/reference_coefficients.csv",
+    "bytes": 423,
+    "sha256": "8509ffa9afe35fbbf48d2171a14314dfab1c9763b0e18d2f4ec4044e3f799539",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/reference_metrics.csv",
+    "bytes": 247,
+    "sha256": "604ddaa8fec7d87e0efe8d9e075b7a0d215591eb06c864399fd77371c62c53fb",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/ridge_metrics.csv",
+    "bytes": 608,
+    "sha256": "9a1902f26924b126006919661028aeeec5d1468a169c7a71088daf750699f1a3",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi34/loss_identity_checks.csv",
+    "bytes": 3968,
+    "sha256": "04d2e8a4667c7a6d629fe6c5c76f2a5bbcfa34ecf620ec2b8c763688ac39aecc",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi34/oof_predictions.csv",
+    "bytes": 116267,
+    "sha256": "ce2915652cd75a1454cb9d00b8c9f9fa1ae7b76d1c412d98566b4df3be559111",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi34/regional_results.csv",
+    "bytes": 9656,
+    "sha256": "e80d0b9cbccf654fafbc747595a56399d4bccb92173fc8eea7b1fcb3b8ec0590",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi34/results_common_features.csv",
+    "bytes": 773,
+    "sha256": "2a35a546f8bcc6cd54d87cb871c7c6b3b34c4d2801fd062155141e3a9e944c28",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi34/results_independent_selection.csv",
+    "bytes": 790,
+    "sha256": "7c477983e489594f6c38a4b8278c711089a18926cbb483e74dcd46ac2afde529",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi34/selected_features_by_fold.csv",
+    "bytes": 15695,
+    "sha256": "60a498245694124eec197b16d771f5715e1a5aeae6528ec64ce9367956bfd0c3",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi35/loss_identity_checks.csv",
+    "bytes": 4186,
+    "sha256": "272926bcb62c83e3275c85d1c2dceb3f46a63cfbd61eede79cfe41d896384565",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi35/oof_predictions.csv",
+    "bytes": 116155,
+    "sha256": "ecf680ec0a219cd4749247b0fe49b073686427b7531eb6754839908687a9a0bd",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi35/regional_results.csv",
+    "bytes": 9643,
+    "sha256": "fdef72da149385051c0fbe24e1245854c5548e18a16ab91478e550534bd3057c",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi35/results_common_features.csv",
+    "bytes": 771,
+    "sha256": "dd59b103a9f01ed2cc61d7c266c6c46a8c8f93f7d0b68632f438e147e0619e2a",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi35/results_independent_selection.csv",
+    "bytes": 792,
+    "sha256": "0c23815de72e8e8b5a6799eda68a10fe8e21f895c488fd99cc507aaeb093901b",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/roi35/selected_features_by_fold.csv",
+    "bytes": 17583,
+    "sha256": "bddd1596fde239922692a6a02c43dd64f38b8f4b9b01d36819c473ff7ec2b8d2",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/spatial/all_image_predictions.csv",
+    "bytes": 2234719,
+    "sha256": "0fce4f01ba1fac98388f915dfe04393925047d1d6007cb31539a4b6108dc2289",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/spatial/overall_metrics.csv",
+    "bytes": 33286,
+    "sha256": "3856d72f16ea614e7359b0650b04e86d56e6a18e3457d223dcf9c9c9cdf03d0f",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/spatial/paired_comparisons.csv",
+    "bytes": 20848,
+    "sha256": "e147bf016f117eadad613df5543688ec4aba0b52d515a37601bd8f2fcbd63500",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/spatial/qc_subgroup_metrics.csv",
+    "bytes": 76730,
+    "sha256": "4b84dc8e36b3166ab0d29ee6a58e37af760bf04bd131a8e8d91595001b96f40d",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/spatial/region_metrics.csv",
+    "bytes": 102186,
+    "sha256": "392f284bcadaf827c9ecc260397ceab248141d5afdeb5e1ec45ca78c08db85be",
+    "release_status": "public_git"
+  },
+  {
+    "path": "results/reference/spatial/representation_comparisons.csv",
+    "bytes": 5315,
+    "sha256": "ea7c5975ca654423d3aef782d3c6b3f274fbf4a0763142ce2b8e3d942569c51b",
+    "release_status": "public_git"
   },
   {
     "path": "src/collect_results.py",
     "bytes": 2717,
     "sha256": "97420dffb4e60efb3ce1760486c542f10235083d05b0fbc8749ca49cdb25a0c9",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/common.py",
     "bytes": 2447,
     "sha256": "72cb2dfa7a20a38bd0291c20859eed5ca7727d47771117616e10726957e89b06",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/feature_extraction.py",
     "bytes": 7539,
     "sha256": "d3640652e2ae179a2f584b11b07e6db518b10d3fc501734196e1147593f5ea85",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/geometry_summary.py",
     "bytes": 1324,
     "sha256": "cc669d830e53ca55bd10a402718eb99db650906407376ccc15d867df83cf2dab",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/image_ml_baseline_analysis.py",
     "bytes": 6617,
     "sha256": "bef29d627afa83cf02e3d4476095cde3c1cb835a41b2c19f91f9c5aa2e52911b",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/lasso_engine.py",
     "bytes": 4319,
     "sha256": "36ba4a82a5729f4f5b67140ce924304172033c56aa3b7e7ac964ee1fafc6666b",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/make_figure7.py",
     "bytes": 3304,
     "sha256": "b698cfca4d64a76e96442fd6d08a092ef858b342a1aafba916f3a959b4137d23",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/paths.py",
     "bytes": 536,
     "sha256": "36de3d78c529e49d576d3966ea359e7ead4a67761bc52a01d7acb8a7fde50b75",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/protocol.py",
     "bytes": 6925,
     "sha256": "695563634e4d007924368b666466c8e97dc1f92cce201b5a4f620c35a66f4652",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/reproduce.py",
     "bytes": 2051,
     "sha256": "8c7b07b1df289080875ec6a755c3c39ae3a1cb6ce347eada3041158e1bfe362b",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/roi34_models.py",
     "bytes": 13948,
     "sha256": "b1642ff955cd592631ecdcd36aa894e4c137637d4b7ea16146491d405f01e788",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/roi35_models.py",
     "bytes": 13967,
     "sha256": "51611b9a1ae8745641ad291844cc2dd06088659095441a089c5a42aa9f36dcac",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/run_baselines.py",
     "bytes": 4713,
     "sha256": "6a5d7a5ad9a8fbc3b737acee246c59a40b34c87dc8eb6dd056a7188b1c560876",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/run_core.py",
     "bytes": 5131,
     "sha256": "07e6d0bd51d2b91588add648dc5da86c763a37a731c87094630e532b59ac86bc",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/run_remaining.py",
     "bytes": 1109,
     "sha256": "f1a8ce88da0d390d36ad52049916a053974cf48b8d612ae3b21e37986585a5af",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/run_ridge.py",
     "bytes": 5946,
     "sha256": "1df912477986e9185cc0f2580c481d194f07e4e0376d17aa9556cf933866f68c",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/run_spatial.py",
     "bytes": 2386,
     "sha256": "4980be03f42f7194176e56b94218f2808f8cd79ddae21126375898832db81903",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/runtime_check.py",
     "bytes": 744,
     "sha256": "1fb46761816b76edb3a7afaeec8c59bc151ffd0e54559d53cdad58b4631d29e6",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/simplified_detector.py",
     "bytes": 833,
     "sha256": "65a09d69948f85465552c376181ca56b6e73b010ba04eba5d0599724a3b0c719",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/sparse_engine.py",
     "bytes": 6462,
     "sha256": "ec313b50913c7074397449f27e5a351362cb2f46e21b20dbcb7388b0d4bb59a2",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/verify_integrity.py",
-    "bytes": 1409,
-    "sha256": "2b15e3217221b0923b2a2172051300be610b108b7f3896d00d8ff61e5dd602fa",
-    "release_status": "code_or_documentation_candidate"
+    "bytes": 1253,
+    "sha256": "ca182b10a8dc696c789196d52f7453103f260b7d4fea58cfd2fb882bd445c8dc",
+    "release_status": "public_git"
   },
   {
     "path": "src/verify_results.py",
     "bytes": 4494,
     "sha256": "9fbf7e1dcda82b19fc8e7db9e3526ceb2bbf33ebbc60ad3bd75ac47c0f6570bf",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/verify_spatial_records.py",
     "bytes": 1870,
     "sha256": "7b5f22848a97004990ab7e4a50641046a37f191c5297f1a8578a6f158dc46e7f",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "tools/audit_release.py",
     "bytes": 2803,
     "sha256": "99ab6d3b84b231e18aeb1aa28c680dddfc370e6a2a44f53e05fd3f06ceba4648",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "tools/download_data.py",
+    "bytes": 5488,
+    "sha256": "c446de5b7ab549d72ec035b0f32d9ca13bb9228a8cf57bd379622ba996a08051",
+    "release_status": "public_git"
   },
   {
     "path": "tools/verify_dataset.py",
     "bytes": 3693,
     "sha256": "18a6c96592c57355fc09b2e66cbef566edba5aa315c491e0ef40cf512216a5c7",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "validation/data_release.json",
+    "bytes": 2853,
+    "sha256": "321e5e0db8d5e60f6cfdcd3235e1796df6b76e71863c5dbec0a801bd3fd1a8de",
+    "release_status": "public_git"
+  },
+  {
+    "path": "validation/data_release_model_reproduction.json",
+    "bytes": 5702,
+    "sha256": "e2fb171cbe9e9964a0becb171878840eb957b0c43c1e172fa13f9f37e1832524",
+    "release_status": "public_git"
   },
   {
     "path": "validation/dataset.json",
     "bytes": 299,
     "sha256": "724e9105d8770592fdb0bb53e30bb2328abf1c742091352ba1a249470ae3cea9",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/dependency_origins.json",
     "bytes": 1148,
     "sha256": "5516b0639d842e602f8df00c2b551a07f090a023937ea567d9fa615175c8c7e5",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/figure7.json",
     "bytes": 858,
     "sha256": "2f625f65c742236ec33370d33a105b20fcd48044053f24fdac6d42d53dee0b40",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/gitignore.json",
     "bytes": 314,
     "sha256": "137546c85fada119dd0a161d3c1d5936e4f806483dca9fd6bf1ef9dab32640f0",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/implementation_preservation.json",
     "bytes": 2292,
     "sha256": "3114facce536a8d9a2be25b8dcc715cb1cfe3ff570d47eae0e449ded7d8f4cde",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/main_reproduction.json",
     "bytes": 5702,
     "sha256": "1ebaa0677a00c6696177c8a00915d850f356fc69b3fecc4d0091211d3332f72d",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/package_checks.json",
     "bytes": 508,
     "sha256": "61d51431906332b7ed0ae8755b23d96c7d281a9f6e2b549d12f9f7dafb406dc3",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/pixel_model_bridge.json",
     "bytes": 1144,
     "sha256": "0405aec1e5555064626d594cc7ec789a086418a2ce9899abc2aac28acafdbf1b",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/pixel_reproduction.json",
     "bytes": 387,
     "sha256": "b2d053a2c192f854c63d02c4570731ecf79e50f6a0001379c6bd09747a1b2935",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/portability.json",
     "bytes": 348,
     "sha256": "edb98d6dc1e43c72d91f6a02ce0dcdf1711ffed13a9a53df0cf15afe9b9af7ed",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/public_release_checks.json",
     "bytes": 1043,
     "sha256": "f6e0f4045fbd453608d010d316cc42dc78fb34b2ad2bce9e96e110b1f23e0409",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/reference_results.json",
     "bytes": 5668,
     "sha256": "d307aae7f4080cda2313e2d95a67df50a95085cf8036e749a5815a05fc524c1a",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/release_scan.json",
     "bytes": 296,
     "sha256": "067bdedb342e4d7d26cc9271160232c9468b9b9732b32015313581ba59aac0f3",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/reproduction_summary.json",
     "bytes": 1381,
     "sha256": "60bc309bc19afa100ab13ade23f32ac590ddb4ab24310be0ee2b6b280b038e4b",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/roi34_reproduction.json",
     "bytes": 392,
     "sha256": "b9b7b879543610aad23ec10517c6314e894fd56ea03595d1bc115910f7f67816",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/roi35_reproduction.json",
     "bytes": 392,
     "sha256": "471932164c30d0d88cf8c144f3dd72e39df8b76de82c232efe780b151af99395",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/source_preservation.json",
     "bytes": 141,
     "sha256": "5a516d58da8871da77ebe9352b84b5d7535eb6f186cd8dc8ddae38d956abfb35",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/spatial_records.json",
     "bytes": 1985,
     "sha256": "119032751cc943993ec76725a110f74c475c987fdbbcc47a770c577a777085ea",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/spatial_reproduction.json",
     "bytes": 188,
     "sha256": "5c7a936da1e9122c9469a142850b01f9e73d48ebe225ae0d5a55e28f874ae77b",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/split_audit.json",
     "bytes": 631,
     "sha256": "2735419de8903e9bbd6a24fb921eb2eeb1681000f900c0ccf6b7c952940af031",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   }
 ]

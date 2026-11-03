@@ -1,4 +1,4 @@
-"""Verify project file hashes, optionally including permission-pending data."""
+"""Verify Git-tracked files, optionally including the downloaded original RGBs."""
 from pathlib import Path
 import argparse, hashlib, json
 
@@ -9,14 +9,12 @@ def main():
     root=Path(__file__).resolve().parents[1];count=0
     entries=json.loads((root/'provenance/file_inventory.json').read_text(encoding='utf-8'))
     if args.scope=='all':
-        local_inventory=root/'.local/provenance/data_inventory.json'
-        if not local_inventory.exists():
-            parser.error('The full-data scope requires the authors\' local data inventory and authorized data. A public clone contains code/documentation only; use --scope public.')
-        entries+=json.loads(local_inventory.read_text(encoding='utf-8'))
+        data=json.loads((root/'provenance/data_files.json').read_text(encoding='utf-8'))
+        entries.extend(entry for entry in data if entry['distribution']=='release_archive')
     for entry in entries:
-        if args.scope=='public' and entry['release_status']!='code_or_documentation_candidate':continue
         relative=entry['path'];path=(root/relative).resolve()
         assert path.is_relative_to(root),relative
+        if not path.exists():parser.error('Missing '+relative+'; run python tools/download_data.py to obtain the release data.')
         digest=hashlib.sha256()
         with path.open('rb') as stream:
             for chunk in iter(lambda:stream.read(1024*1024),b''):digest.update(chunk)

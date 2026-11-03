@@ -1,5 +1,5 @@
 # Metadata and shared height references
 
-`images.csv` and `site_date_heights.csv` reorganize the labels already present in the archived strip-coordinate file into 92 image records and 33 shared region-date references. Original filenames, dates, regions and measured height values are retained. Raw file hashes and strip coordinates are copied from the final research package.
+`images.csv` maps 92 original image identities to region, acquisition date, shared reference and raw-file hash. `site_date_heights.csv` contains the 33 unique shared region-date height references. These English tables reorganize existing retained labels; they are not new field measurements.
 
-These metadata include study labels and await rights review together with the data. They are excluded by `.gitignore`. See `docs/DATA_DICTIONARY.md` for field definitions.
+The original raw manifest and six-strip coordinates are preserved. All nine metadata files are public in Git and the complete data archive after the repository owner's confirmation of publication permission. See [the data dictionary](../../docs/DATA_DICTIONARY.md) for field definitions. Dates remain metadata and are not added to image-model predictors.

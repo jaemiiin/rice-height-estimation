@@ -1,5 +1,5 @@
 # Processed data
 
-Existing numerical inputs are retained byte-for-byte. The main five matrices contain 552 strips, 37 features and the original identifiers/height labels. Spatial and ROI subdirectories hold separate sensitivity/comparison inputs.
+The five main matrices contain 552 strips, 37 candidates and the original image/region/date identifiers and height labels. `fixed_baseline_NExGR_continuous.csv` supplies the extra fixed RGB baseline component; NExGR is not an additional selection candidate.
 
-These files are present for local reproduction but excluded from ordinary Git staging until data redistribution rights have been confirmed. No new feature measurements or height labels were invented while preparing this folder.
+The `spatial/`, `roi34/` and `roi35/` subdirectories contain separately labelled sensitivity and follow-up comparison inputs. All 87 processed tables are public in Git and the complete study-data ZIP. Their bytes and original labels are unchanged. See `provenance/data_files.json` at the repository root for scope and hashes.

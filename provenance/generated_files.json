@@ -2,261 +2,301 @@
   {
     "path": ".gitattributes",
     "purpose": "Project path handling or release preparation configuration",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": ".gitignore",
     "purpose": "Project path handling or release preparation configuration",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "README.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "config.json",
     "purpose": "Portable configuration or separate environment specification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "config/data_release.json",
+    "purpose": "Approved data-release manifest, download utility, documentation or validation record",
+    "release_status": "public_git"
   },
   {
     "path": "config/environment.json",
     "purpose": "Portable configuration or separate environment specification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "config/roi34.json",
     "purpose": "Portable configuration or separate environment specification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "config/roi35.json",
     "purpose": "Portable configuration or separate environment specification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "data/metadata/README.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/images.csv",
+    "purpose": "Approved data-release manifest, download utility, documentation or validation record",
+    "release_status": "public_git"
+  },
+  {
+    "path": "data/metadata/site_date_heights.csv",
+    "purpose": "Approved data-release manifest, download utility, documentation or validation record",
+    "release_status": "public_git"
   },
   {
     "path": "data/processed/README.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "data/raw/README.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "docs/CODE_MAP.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "docs/DATA_DICTIONARY.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "docs/DATA_RELEASE.md",
+    "purpose": "Approved data-release manifest, download utility, documentation or validation record",
+    "release_status": "public_git"
   },
   {
     "path": "docs/LICENSE_STATUS.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "docs/LOCAL_PREPARATION_REPORT.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "docs/PUBLIC_RELEASE.md",
     "purpose": "Public release scope or verification documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "docs/RELEASE_CHECKLIST.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "docs/VALIDATION.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/extract_features.py",
     "purpose": "Portable command-line entry for existing research computations",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/make_figure7.py",
     "purpose": "Portable command-line entry for existing research computations",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/reproduce_main.py",
     "purpose": "Portable command-line entry for existing research computations",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/reproduce_roi.py",
     "purpose": "Portable command-line entry for existing research computations",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/reproduce_spatial.py",
     "purpose": "Portable command-line entry for existing research computations",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "experiments/verify_results.py",
     "purpose": "Portable command-line entry for existing research computations",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "provenance/copied_files.json",
     "purpose": "File inventory, origin record or publication review classification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "provenance/data_files.json",
+    "purpose": "Approved data-release manifest, download utility, documentation or validation record",
+    "release_status": "public_git"
   },
   {
     "path": "provenance/file_inventory.json",
     "purpose": "File inventory, origin record or publication review classification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "provenance/generated_files.json",
     "purpose": "File inventory, origin record or publication review classification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "provenance/release_candidates.txt",
     "purpose": "File inventory, origin record or publication review classification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "requirements-figures.txt",
     "purpose": "Portable configuration or separate environment specification",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "results/reference/README.md",
     "purpose": "English usage, method, availability or validation documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "src/paths.py",
     "purpose": "Project path handling or release preparation configuration",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "tools/audit_release.py",
     "purpose": "Read-only local verification tool",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "tools/download_data.py",
+    "purpose": "Approved data-release manifest, download utility, documentation or validation record",
+    "release_status": "public_git"
   },
   {
     "path": "tools/verify_dataset.py",
     "purpose": "Read-only local verification tool",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
+  },
+  {
+    "path": "validation/data_release.json",
+    "purpose": "Approved data-release manifest, download utility, documentation or validation record",
+    "release_status": "public_git"
+  },
+  {
+    "path": "validation/data_release_model_reproduction.json",
+    "purpose": "Approved data-release manifest, download utility, documentation or validation record",
+    "release_status": "public_git"
   },
   {
     "path": "validation/dataset.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/dependency_origins.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/figure7.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/gitignore.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/implementation_preservation.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/main_reproduction.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/package_checks.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/pixel_model_bridge.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/pixel_reproduction.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/portability.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/public_release_checks.json",
     "purpose": "Public release scope or verification documentation",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/reference_results.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/release_scan.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/reproduction_summary.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/roi34_reproduction.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/roi35_reproduction.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/source_preservation.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/spatial_records.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/spatial_reproduction.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   },
   {
     "path": "validation/split_audit.json",
     "purpose": "Evidence from actual preparation checks or experiment runs",
-    "release_status": "code_or_documentation_candidate"
+    "release_status": "public_git"
   }
 ]
