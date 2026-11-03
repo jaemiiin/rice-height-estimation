@@ -1,7 +1,6 @@
-"""Ground-truth validation and the pinned, existing GitHub Release download.
+"""Ground-truth validation and the pinned 92-image GitHub Release download.
 
-Only original JPEG members are installed. Historical derived tables in the same
-archive remain available in the Release but are not inputs to this pipeline.
+The archive contains only original JPEGs; labels remain in data/ground_truth.csv.
 """
 from pathlib import Path, PurePosixPath
 import csv
@@ -11,10 +10,10 @@ import urllib.request
 import zipfile
 
 PROJECT = Path(__file__).resolve().parents[1]
-ARCHIVE_NAME = 'rice-height-study-data-v1.0.0.zip'
+ARCHIVE_NAME = 'rice-height-images.zip'
 ARCHIVE_URL = 'https://github.com/jaemiiin/rice-height-estimation/releases/download/rice-height-dataset/' + ARCHIVE_NAME
-ARCHIVE_SIZE = 665284341
-ARCHIVE_SHA256 = '432ee5016d63426463e949f88b91a0aff90d85b16b3b2044b8e9530396475c43'
+ARCHIVE_SIZE = 649918569
+ARCHIVE_SHA256 = 'f0e12041425cfa267a71234c450f15cd91b233019ea3ee4cc42e3893b19387d1'
 
 
 def sha256(path):
@@ -120,9 +119,12 @@ def download_images(root, ground_truth, archive=None):
     if archive.stat().st_size != ARCHIVE_SIZE or sha256(archive) != ARCHIVE_SHA256:
         raise ValueError('Archive size or SHA-256 differs from rice-height-dataset')
     with zipfile.ZipFile(archive) as bundle:
+        expected = {'data/images/' + row['filename'] for row in rows}
+        if len(bundle.infolist()) != 92 or set(bundle.namelist()) != expected:
+            raise ValueError('The archive must contain exactly the 92 original image files')
         # Verify every selected member before installing any new image.
         for row in rows:
-            content = bundle.read('data/raw/' + row['filename'])
+            content = bundle.read('data/images/' + row['filename'])
             if hashlib.sha256(content).hexdigest() != row['sha256']:
                 raise ValueError('Archived image checksum mismatch: ' + row['filename'])
         for row in rows:
@@ -131,6 +133,6 @@ def download_images(root, ground_truth, archive=None):
                 continue
             path.parent.mkdir(parents=True, exist_ok=True)
             with path.open('xb') as output:
-                output.write(bundle.read('data/raw/' + row['filename']))
+                output.write(bundle.read('data/images/' + row['filename']))
     check_images(root, rows)
     print(f'Installed {len(rows)-present} original images; all 92 checksums verified.', flush=True)
