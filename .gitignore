@@ -1,29 +1,24 @@
-# Original RGB files are distributed in the verified GitHub Release archive.
-/data/raw/*
-!/data/raw/README.md
-# Historical review log; superseded by the approved provenance/data_files.json.
-/provenance/data_permission_pending.csv
-# Generated runs, local environments, caches, and potentially identifying logs.
-/results/runs/
-/.venv*/
+# Original images are distributed through the existing data-v1.0.0 Release.
+/data/images/
+
+# Recomputed features, models, predictions, inspection files and downloads.
+/results/
+/.cache/
 /.local/
+/.venv*/
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ipynb_checkpoints/
 *.log
-FAILED*.txt
+*.tmp
+*.part
+*.zip
+
+# Local credentials and editor/operating-system files.
 .env
 .env.*
-!.env.example
 *.pem
 *.key
-*.p12
-*.pfx
-*.zip
-*.7z
-*.tar
-*.tar.gz
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/

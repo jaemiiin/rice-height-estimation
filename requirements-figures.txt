@@ -1,2 +1,0 @@
--r requirements-analysis.txt
-matplotlib==3.11.2
