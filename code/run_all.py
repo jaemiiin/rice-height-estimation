@@ -28,7 +28,7 @@ def main():
     parser.add_argument('--out', type=Path, default=PROJECT / 'results/main', help='New output directory; existing runs are never replaced')
     parser.add_argument('--download', action='store_true', help='Obtain missing original images before running')
     parser.add_argument('--download-only', action='store_true', help='Obtain and verify original images, then exit; standard library only')
-    parser.add_argument('--archive', type=Path, help='Existing data-v1.0.0 ZIP instead of an online download')
+    parser.add_argument('--archive', type=Path, help='Existing Rice Height Dataset ZIP instead of an online download')
     args = parser.parse_args()
     if args.download or args.download_only or args.archive:
         download_images(args.images, args.ground_truth, args.archive)

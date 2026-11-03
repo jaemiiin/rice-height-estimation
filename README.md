@@ -8,13 +8,13 @@ The method uses continuous ExG weighting, six adaptive vertical strips, 37 candi
 
 The National Institute of Crop Science, Rural Development Administration supplied **92 original 3840 × 2160 RGB images** and **33 site-date reference heights** across nine regions. Images from the same region and date share one height in centimetres. `data/ground_truth.csv` contains the original filename, region, acquisition date/time, site-date identifier, reference height, dimensions, and original SHA-256 checksum. Times are the acquisition hours encoded in the filenames and described in the manuscript (local Korean time); they are metadata only.
 
-Original images are in the existing [data-v1.0.0 Release](https://github.com/jaemiiin/rice-height-estimation/releases/tag/data-v1.0.0). Download and install them with any Python 3.9+ interpreter; this command needs no third-party packages:
+Original images are in the [Rice Height Dataset Release](https://github.com/jaemiiin/rice-height-estimation/releases/tag/rice-height-dataset). Download and install them with any Python 3.9+ interpreter; this command needs no third-party packages:
 
 ```bash
 python code/run_all.py --download-only
 ```
 
-The downloader verifies the archive and all 92 image checksums, then maps `data/raw/<region>/<filename>.jpg` inside the archive to `data/images/<region>/<filename>.jpg`. It does not overwrite differing existing images. The approximately 635 MiB [ZIP download](https://github.com/jaemiiin/rice-height-estimation/releases/download/data-v1.0.0/rice-height-study-data-v1.0.0.zip) also retains historical derived data and results. Only images are extracted for this workflow; features and predictions are regenerated.
+The downloader verifies the archive and all 92 image checksums, then maps `data/raw/<region>/<filename>.jpg` inside the archive to `data/images/<region>/<filename>.jpg`. It does not overwrite differing existing images. The approximately 635 MiB [ZIP download](https://github.com/jaemiiin/rice-height-estimation/releases/download/rice-height-dataset/rice-height-study-data-v1.0.0.zip) also retains historical derived data and results. Only images are extracted for this workflow; features and predictions are regenerated. The existing archive filename and checksum are retained; the Release title and tag do not use a version number.
 
 For an offline ZIP, use `python code/run_all.py --download-only --archive /path/to/rice-height-study-data-v1.0.0.zip`. Its SHA-256 is `432ee5016d63426463e949f88b91a0aff90d85b16b3b2044b8e9530396475c43`.
 
@@ -121,7 +121,7 @@ The full run produces 24 analyses and 2,208 image-level out-of-fold predictions.
 - `results/partition_*_summary.csv`: coverage and boundary displacement summaries.
 - `verification.json`: actual metrics and checks against the reported rounded scores.
 
-The broader 71-condition spatial exploration and later ROI34/ROI35 follow-ups are outside the current manuscript workflow. Their historical inputs/results remain in the existing Release, and their previous code remains at [data-v1.0.0](https://github.com/jaemiiin/rice-height-estimation/tree/data-v1.0.0). They are not silently substituted for the 37-feature primary study. Historical manual boundary inspection is not automated by these scripts.
+The broader 71-condition spatial exploration and later ROI34/ROI35 follow-ups are outside the current manuscript workflow. Their historical inputs/results remain in the existing Release, and their previous code remains at [rice-height-dataset](https://github.com/jaemiiin/rice-height-estimation/tree/rice-height-dataset). They are not silently substituted for the 37-feature primary study. Historical manual boundary inspection is not automated by these scripts.
 
 ## Availability and citation
 
@@ -129,4 +129,4 @@ Data and code publication permissions have been confirmed by the repository owne
 
 Na J, Kwon D, Chang J-K, Do Y, Hong S-J, Kim K-M, Choi H. *An Interpretable Framework for Rice Plant-Height Estimation from Single Top-View RGB Images Using Continuous ExG Weighting*. Manuscript prepared for submission to Plant Methods.
 
-Code: [jaemiiin/rice-height-estimation](https://github.com/jaemiiin/rice-height-estimation). Data: [data-v1.0.0](https://github.com/jaemiiin/rice-height-estimation/releases/tag/data-v1.0.0).
+Code: [jaemiiin/rice-height-estimation](https://github.com/jaemiiin/rice-height-estimation). Data: [Rice Height Dataset](https://github.com/jaemiiin/rice-height-estimation/releases/tag/rice-height-dataset).

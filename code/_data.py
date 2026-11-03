@@ -12,7 +12,7 @@ import zipfile
 
 PROJECT = Path(__file__).resolve().parents[1]
 ARCHIVE_NAME = 'rice-height-study-data-v1.0.0.zip'
-ARCHIVE_URL = 'https://github.com/jaemiiin/rice-height-estimation/releases/download/data-v1.0.0/' + ARCHIVE_NAME
+ARCHIVE_URL = 'https://github.com/jaemiiin/rice-height-estimation/releases/download/rice-height-dataset/' + ARCHIVE_NAME
 ARCHIVE_SIZE = 665284341
 ARCHIVE_SHA256 = '432ee5016d63426463e949f88b91a0aff90d85b16b3b2044b8e9530396475c43'
 
@@ -118,7 +118,7 @@ def download_images(root, ground_truth, archive=None):
             partial.replace(archive)
     archive = Path(archive)
     if archive.stat().st_size != ARCHIVE_SIZE or sha256(archive) != ARCHIVE_SHA256:
-        raise ValueError('Archive size or SHA-256 differs from data-v1.0.0')
+        raise ValueError('Archive size or SHA-256 differs from rice-height-dataset')
     with zipfile.ZipFile(archive) as bundle:
         # Verify every selected member before installing any new image.
         for row in rows:
