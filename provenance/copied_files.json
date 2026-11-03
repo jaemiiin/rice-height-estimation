@@ -1,0 +1,242 @@
+[
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/collect_results.py",
+    "destination": "src/collect_results.py",
+    "source_sha256": "97420dffb4e60efb3ce1760486c542f10235083d05b0fbc8749ca49cdb25a0c9",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "97420dffb4e60efb3ce1760486c542f10235083d05b0fbc8749ca49cdb25a0c9",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/common.py",
+    "destination": "src/common.py",
+    "source_sha256": "4ae67eb08cc595d9da374e577e81b7e312e1e60d03a9bf7018d0cc24f4d5bc1a",
+    "adaptation": "Project-relative input/output routing; numerical procedure retained",
+    "destination_sha256": "72cb2dfa7a20a38bd0291c20859eed5ca7727d47771117616e10726957e89b06",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/feature_extraction.py",
+    "destination": "src/feature_extraction.py",
+    "source_sha256": "102cbefd47d4606dd647d387ab830869a7151d5210557c40657c59f1e1156436",
+    "adaptation": "Project-relative input/output routing; numerical procedure retained",
+    "destination_sha256": "d3640652e2ae179a2f584b11b07e6db518b10d3fc501734196e1147593f5ea85",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/image_ml_baseline_analysis.py",
+    "destination": "src/image_ml_baseline_analysis.py",
+    "source_sha256": "bef29d627afa83cf02e3d4476095cde3c1cb835a41b2c19f91f9c5aa2e52911b",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "bef29d627afa83cf02e3d4476095cde3c1cb835a41b2c19f91f9c5aa2e52911b",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/lasso_engine.py",
+    "destination": "src/lasso_engine.py",
+    "source_sha256": "36ba4a82a5729f4f5b67140ce924304172033c56aa3b7e7ac964ee1fafc6666b",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "36ba4a82a5729f4f5b67140ce924304172033c56aa3b7e7ac964ee1fafc6666b",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/make_figure7.py",
+    "destination": "src/make_figure7.py",
+    "source_sha256": "129d65e83f5f7372cbd71f38db2ecbeb3d346b4dc35558f030986ec9281b973a",
+    "adaptation": "Project-relative reference path; output metadata corrected to actual output filenames; plotting calculations unchanged",
+    "destination_sha256": "b698cfca4d64a76e96442fd6d08a092ef858b342a1aafba916f3a959b4137d23",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/protocol.py",
+    "destination": "src/protocol.py",
+    "source_sha256": "695563634e4d007924368b666466c8e97dc1f92cce201b5a4f620c35a66f4652",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "695563634e4d007924368b666466c8e97dc1f92cce201b5a4f620c35a66f4652",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/reproduce.py",
+    "destination": "src/reproduce.py",
+    "source_sha256": "fe876e9d77a8f02f7f0ceffaecc4d43dc088c9a8e0bbe602c0ed793cbea1c891",
+    "adaptation": "Project-relative input/output routing; numerical procedure retained",
+    "destination_sha256": "8c7b07b1df289080875ec6a755c3c39ae3a1cb6ce347eada3041158e1bfe362b",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/run_baselines.py",
+    "destination": "src/run_baselines.py",
+    "source_sha256": "6a5d7a5ad9a8fbc3b737acee246c59a40b34c87dc8eb6dd056a7188b1c560876",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "6a5d7a5ad9a8fbc3b737acee246c59a40b34c87dc8eb6dd056a7188b1c560876",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/run_core.py",
+    "destination": "src/run_core.py",
+    "source_sha256": "07e6d0bd51d2b91588add648dc5da86c763a37a731c87094630e532b59ac86bc",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "07e6d0bd51d2b91588add648dc5da86c763a37a731c87094630e532b59ac86bc",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/run_remaining.py",
+    "destination": "src/run_remaining.py",
+    "source_sha256": "f1a8ce88da0d390d36ad52049916a053974cf48b8d612ae3b21e37986585a5af",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "f1a8ce88da0d390d36ad52049916a053974cf48b8d612ae3b21e37986585a5af",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/run_ridge.py",
+    "destination": "src/run_ridge.py",
+    "source_sha256": "1df912477986e9185cc0f2580c481d194f07e4e0376d17aa9556cf933866f68c",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "1df912477986e9185cc0f2580c481d194f07e4e0376d17aa9556cf933866f68c",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/run_spatial.py",
+    "destination": "src/run_spatial.py",
+    "source_sha256": "a3b5ef32e3e28555638d72f726d4739b066f6be56988c42a7e0bd4d8edd2d5b3",
+    "adaptation": "Project-relative input/output routing; numerical procedure retained",
+    "destination_sha256": "4980be03f42f7194176e56b94218f2808f8cd79ddae21126375898832db81903",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/runtime_check.py",
+    "destination": "src/runtime_check.py",
+    "source_sha256": "eb7e5777cfe639eff2d190a896e9e1c85d9c0d7fc16ffe80c2ff7a9eecb8cbfe",
+    "adaptation": "Recorded environment version check retained; dependency-folder injection removed",
+    "destination_sha256": "1fb46761816b76edb3a7afaeec8c59bc151ffd0e54559d53cdad58b4631d29e6",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/simplified_detector.py",
+    "destination": "src/simplified_detector.py",
+    "source_sha256": "65a09d69948f85465552c376181ca56b6e73b010ba04eba5d0599724a3b0c719",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "65a09d69948f85465552c376181ca56b6e73b010ba04eba5d0599724a3b0c719",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/sparse_engine.py",
+    "destination": "src/sparse_engine.py",
+    "source_sha256": "ec313b50913c7074397449f27e5a351362cb2f46e21b20dbcb7388b0d4bb59a2",
+    "adaptation": "byte-identical copy",
+    "destination_sha256": "ec313b50913c7074397449f27e5a351362cb2f46e21b20dbcb7388b0d4bb59a2",
+    "byte_identical": true,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/verify_integrity.py",
+    "destination": "src/verify_integrity.py",
+    "source_sha256": "19fd019df32e176a20d21e9bd471e56f16a340b5c8982ab5acb1075627293f29",
+    "adaptation": "Public code inventory separated from optional ignored local-data inventory; no original dataset filenames published",
+    "destination_sha256": "2b15e3217221b0923b2a2172051300be610b108b7f3896d00d8ff61e5dd602fa",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/verify_results.py",
+    "destination": "src/verify_results.py",
+    "source_sha256": "6b1d7b3ab7ed0f27bbb6bae1978fa6cd89a938cec27451cb63aa324ec38341eb",
+    "adaptation": "Project-relative input/output routing; numerical procedure retained",
+    "destination_sha256": "9fbf7e1dcda82b19fc8e7db9e3526ceb2bbf33ebbc60ad3bd75ac47c0f6570bf",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "code/verify_spatial_records.py",
+    "destination": "src/verify_spatial_records.py",
+    "source_sha256": "6904e4c8865ec32d2e98e65c83ee00d6d1945026dccab8d1e72fb86afe8f228c",
+    "adaptation": "Project-relative input/output routing; numerical procedure retained",
+    "destination_sha256": "7b5f22848a97004990ab7e4a50641046a37f191c5297f1a8578a6f158dc46e7f",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "archived-geometry-exporter",
+    "source_file": "code/collect_results.py",
+    "destination": "src/geometry_summary.py",
+    "source_sha256": "3ee01d700945643efc6d2958d2c68f358512b1ea88cc53efacce2b4f896ac12b",
+    "adaptation": "Existing coordinate-summary block extracted into a callable function; arithmetic unchanged",
+    "destination_sha256": "cc669d830e53ca55bd10a402718eb99db650906407376ccc15d867df83cf2dab",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "roi-comparison-34",
+    "source_file": "code/run_models.py",
+    "destination": "src/roi34_models.py",
+    "source_sha256": "2c5a913637cd88f7e58cc6ef1acc085e519cff9a7fe52762cbf3a37f60e14ee7",
+    "adaptation": "Project-relative input/output routing; numerical procedure retained",
+    "destination_sha256": "b1642ff955cd592631ecdcd36aa894e4c137637d4b7ea16146491d405f01e788",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "roi-comparison-35",
+    "source_file": "code/run_models.py",
+    "destination": "src/roi35_models.py",
+    "source_sha256": "67b2f6534e9fed8064e589699ebbb6d1aa8cec69534a244fbe98ce969df5e714",
+    "adaptation": "Project-relative input/output routing; numerical procedure retained",
+    "destination_sha256": "51611b9a1ae8745641ad291844cc2dd06088659095441a089c5a42aa9f36dcac",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "requirements-analysis.txt",
+    "destination": "requirements-analysis.txt",
+    "source_sha256": "beaa055e1aaf3560ce526e9a3c250c2a79b1becd75555024d07c10b89627ec10",
+    "adaptation": "Core recorded versions retained; observed transitive dependencies pinned; plotting split into optional requirements",
+    "destination_sha256": "6c9826c722ae1299f2c74f4dec2ef9901d71b760fd0b0ec3d1d6578fee281905",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "source_bundle": "final-analysis-2026-10-22",
+    "source_file": "requirements-pixels.txt",
+    "destination": "requirements-pixels.txt",
+    "source_sha256": "e820b11cc5ba5c39d46f95760fdda8b2eefc5235c48bde6cfcdb96634e2184d1",
+    "adaptation": "Recorded requirements retained; separate Python environment identified in comment",
+    "destination_sha256": "c2ee00bce3fedcfaa3e955d54d867b5b74bc411dd084ffdfceb1ab8e171b5a18",
+    "byte_identical": false,
+    "release_status": "code_or_documentation_candidate"
+  }
+]

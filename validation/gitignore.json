@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "data_dependent_files_excluded": 214,
+  "code_documentation_candidates_not_ignored": 75,
+  "local_runtime_run_secret_probes_excluded": 6,
+  "method": "git check-ignore --no-index with isolated scratch Git directory",
+  "project_git_directory_created": false,
+  "remote_operations": false
+}

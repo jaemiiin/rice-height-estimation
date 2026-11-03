@@ -1,0 +1,5 @@
+# Python 3.9.18; separate from the modeling environment.
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.13.1
+opencv-python-headless==4.11.0.86

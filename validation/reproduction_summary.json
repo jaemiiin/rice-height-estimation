@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "preparation_date": "2026-11-03",
+  "primary_metrics": {
+    "n": 92,
+    "R2": 0.9000213960947129,
+    "RMSE": 6.666608768631186,
+    "MAE": 5.057594439678164,
+    "mean_signed_error": 0.2301074337051805
+  },
+  "full_pixel_reextraction": {
+    "images": 92,
+    "strips": 552,
+    "features": 37,
+    "representations": 5,
+    "all_features_and_coordinates_exact": true
+  },
+  "main_model_refits": {
+    "analyses": 24,
+    "OOF_predictions": 2208,
+    "max_abs_prediction_difference": 0
+  },
+  "spatial_model_refits": {
+    "conditions": 71,
+    "OOF_predictions": 6532,
+    "max_abs_prediction_difference": 0.0
+  },
+  "optional_roi_refits": {
+    "variants": [
+      34,
+      35
+    ],
+    "analyses_per_variant": 8,
+    "OOF_predictions_per_variant": 736
+  },
+  "elastic_net": {
+    "fits": 441,
+    "all_converged": true,
+    "maximum_iterations_observed": 14756,
+    "configured_max_iter": 100000
+  },
+  "figure7_rendered": true,
+  "limitations": [
+    "Fresh package installation from a network package index was not tested.",
+    "Additional spatial/ROI raw-pixel pipelines and historical manual QC are outside the supported extraction scope.",
+    "Not every manuscript figure or typesetting source is included.",
+    "Data redistribution rights, licenses and permanent URLs remain pending."
+  ]
+}

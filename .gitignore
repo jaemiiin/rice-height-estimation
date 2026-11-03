@@ -1,0 +1,35 @@
+# Original data, labels, derived data and reference predictions: rights review pending.
+/data/raw/*
+!/data/raw/README.md
+/data/processed/*
+!/data/processed/README.md
+/data/metadata/*
+!/data/metadata/README.md
+/results/reference/*
+!/results/reference/README.md
+# Detailed local exclusion manifest contains original data filenames.
+/provenance/data_permission_pending.csv
+# Generated runs, local environments, caches, and potentially identifying logs.
+/results/runs/
+/.venv*/
+/.local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+*.log
+FAILED*.txt
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.zip
+*.7z
+*.tar
+*.tar.gz
+.DS_Store
+Thumbs.db

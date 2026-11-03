@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "candidates": 37,
+  "date_and_target_excluded_from_candidates": true,
+  "regional_inner_boundaries_checked": 360,
+  "training_only_outer_scalers_checked": 45,
+  "max_abs_scaler_difference": 0.0,
+  "image_predictions_checked_for_six_strip_averaging": 460,
+  "scope": "Primary and four representation/partition comparisons; source review confirms inner training-only standardization, training-only BIC, and outer training-only OLS.",
+  "posthoc_caveat": "Fixed-six reference models and ablations use a retrospectively defined feature set and are not an independent validation of that selection."
+}

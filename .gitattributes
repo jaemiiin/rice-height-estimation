@@ -1,0 +1,4 @@
+# Preserve exact bytes for the SHA-256 inventory, including archived line endings.
+* -text
+*.jpg binary
+*.png binary

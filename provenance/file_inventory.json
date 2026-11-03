@@ -1,0 +1,452 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 117,
+    "sha256": "966749cb6f41f69c88e1cb89b447a94a0e874ed87b5038520516e9bfb6152aa7",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 668,
+    "sha256": "d0b5e1f7bf99eb75d512b1c6b3758203b29355c1b16a6a8e9440cc6511870668",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "README.md",
+    "bytes": 17979,
+    "sha256": "cbd043c4234aeefb0a0915763861b7988b712bfcc241a68dc0673073d32d2f69",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "config.json",
+    "bytes": 3888,
+    "sha256": "8057a7d0556b120e29fd33fd23dff4188e38b11fd1f3158e2e9bec33cd19dba5",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "config/environment.json",
+    "bytes": 147,
+    "sha256": "2898e6243379f26d4549b96ed2eff4b96d82c1fcfd2d9cba63b29cac7a5ba767",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "config/roi34.json",
+    "bytes": 456,
+    "sha256": "53fee6d10330bb47e5a6180be129c4a1ef8e0c2db5e9783da404b86e87c29136",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "config/roi35.json",
+    "bytes": 474,
+    "sha256": "7131eee75ce0f4bd9fd30dc9b21267fd8685dc9bdc9fe909168021f923ad9b9f",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "data/metadata/README.md",
+    "bytes": 549,
+    "sha256": "d97b614baea2a5cf24d4ae7c89420d578597cb7f9dc365878078b8553b98be82",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "data/processed/README.md",
+    "bytes": 476,
+    "sha256": "a589fbe28d57137cdb850bea03ddbb28517b3025d30314dd4f4a5b181eb2b950",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "data/raw/README.md",
+    "bytes": 525,
+    "sha256": "8abb63e8b693c62f912b799ee0b10fa55b4c7b41d38657b6e6de37f6ca39856a",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "docs/CODE_MAP.md",
+    "bytes": 2738,
+    "sha256": "0f177f187fdf05706dd1258ee1156573216b3c959820faac6913a37c841cc09f",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "docs/DATA_DICTIONARY.md",
+    "bytes": 3384,
+    "sha256": "8d8484a828f4471944e23ca1a6e0cc2264e033d975a4e6c1a614612116f07d65",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "docs/LICENSE_STATUS.md",
+    "bytes": 1133,
+    "sha256": "8e73379f235c62010b1918e62dd4093a2e1d513a7b17543a6c7d2bf91043720e",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "docs/LOCAL_PREPARATION_REPORT.md",
+    "bytes": 5368,
+    "sha256": "6391bb20cab7693a898487899f08fc41f6ea552d40790fc5bc6b8528c222f717",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "docs/PUBLIC_RELEASE.md",
+    "bytes": 4019,
+    "sha256": "b3d5153ead60df94fecbd6b8eb33435077a4a563431b1197682320b6c6b8ddbb",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "docs/RELEASE_CHECKLIST.md",
+    "bytes": 4078,
+    "sha256": "a1887eceac3427aa69caa0d8335078bbb670c0d56315d6f15cf4cd312cde4d62",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "docs/VALIDATION.md",
+    "bytes": 7882,
+    "sha256": "0cf43741b0d2d6cdc3d06e3b30a5d9a62dad17dca19b0f859582e600d489d3e3",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "experiments/extract_features.py",
+    "bytes": 1501,
+    "sha256": "9798588968e30d5c11f98edc097ab66660a4c170acb2721f32c4b6ebc719dbe1",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "experiments/make_figure7.py",
+    "bytes": 285,
+    "sha256": "32a708b350fc6de65aa267f902a5577aab630721a6e4d0d272b5c10ff922a7bc",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "experiments/reproduce_main.py",
+    "bytes": 268,
+    "sha256": "653fbd1819a650eb81703167dfc73859d554abb79dff7bfcb9aaf20504ef04da",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "experiments/reproduce_roi.py",
+    "bytes": 2102,
+    "sha256": "dae01190c45699eaacde8bf58dbaeba420b468ac4aeb36690ed210015a92fe3d",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "experiments/reproduce_spatial.py",
+    "bytes": 273,
+    "sha256": "8124f1aaf186a4f369e6045c7a58f07356cc4bfef1e2f92a3adb2c81cd8f132b",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "experiments/verify_results.py",
+    "bytes": 1172,
+    "sha256": "fd9279371ef687d2a87c20cfcc98eb8d474eae70f62fc757d62c867ea5df5ddd",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "provenance/copied_files.json",
+    "bytes": 11798,
+    "sha256": "0bcb6675c877711b0d69cc1fb0614137b4956d542e9c98a96fc2e2d11024b958",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "provenance/generated_files.json",
+    "bytes": 9641,
+    "sha256": "7cb67d0cd3757ab0b3113e3cdb78955e8293ac241b8c2c1a52967c677f29c695",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "provenance/release_candidates.txt",
+    "bytes": 2036,
+    "sha256": "afc368cfb7bab05582de1c1d3809ccbb5758db75f753d2c5c5803ba907ed8f10",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "requirements-analysis.txt",
+    "bytes": 253,
+    "sha256": "6c9826c722ae1299f2c74f4dec2ef9901d71b760fd0b0ec3d1d6578fee281905",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "requirements-figures.txt",
+    "bytes": 48,
+    "sha256": "9b5b58ce0aaeba6b22d1b5b17e2244180c977b84ea08d9f1b5376073dde43146",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "requirements-pixels.txt",
+    "bytes": 133,
+    "sha256": "c2ee00bce3fedcfaa3e955d54d867b5b74bc411dd084ffdfceb1ab8e171b5a18",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "results/reference/README.md",
+    "bytes": 531,
+    "sha256": "b87ad6edbf92072d56ea281f8ac74971624084c80f6c8363d7d60d88ca1d0664",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/collect_results.py",
+    "bytes": 2717,
+    "sha256": "97420dffb4e60efb3ce1760486c542f10235083d05b0fbc8749ca49cdb25a0c9",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/common.py",
+    "bytes": 2447,
+    "sha256": "72cb2dfa7a20a38bd0291c20859eed5ca7727d47771117616e10726957e89b06",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/feature_extraction.py",
+    "bytes": 7539,
+    "sha256": "d3640652e2ae179a2f584b11b07e6db518b10d3fc501734196e1147593f5ea85",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/geometry_summary.py",
+    "bytes": 1324,
+    "sha256": "cc669d830e53ca55bd10a402718eb99db650906407376ccc15d867df83cf2dab",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/image_ml_baseline_analysis.py",
+    "bytes": 6617,
+    "sha256": "bef29d627afa83cf02e3d4476095cde3c1cb835a41b2c19f91f9c5aa2e52911b",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/lasso_engine.py",
+    "bytes": 4319,
+    "sha256": "36ba4a82a5729f4f5b67140ce924304172033c56aa3b7e7ac964ee1fafc6666b",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/make_figure7.py",
+    "bytes": 3304,
+    "sha256": "b698cfca4d64a76e96442fd6d08a092ef858b342a1aafba916f3a959b4137d23",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/paths.py",
+    "bytes": 536,
+    "sha256": "36de3d78c529e49d576d3966ea359e7ead4a67761bc52a01d7acb8a7fde50b75",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/protocol.py",
+    "bytes": 6925,
+    "sha256": "695563634e4d007924368b666466c8e97dc1f92cce201b5a4f620c35a66f4652",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/reproduce.py",
+    "bytes": 2051,
+    "sha256": "8c7b07b1df289080875ec6a755c3c39ae3a1cb6ce347eada3041158e1bfe362b",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/roi34_models.py",
+    "bytes": 13948,
+    "sha256": "b1642ff955cd592631ecdcd36aa894e4c137637d4b7ea16146491d405f01e788",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/roi35_models.py",
+    "bytes": 13967,
+    "sha256": "51611b9a1ae8745641ad291844cc2dd06088659095441a089c5a42aa9f36dcac",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/run_baselines.py",
+    "bytes": 4713,
+    "sha256": "6a5d7a5ad9a8fbc3b737acee246c59a40b34c87dc8eb6dd056a7188b1c560876",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/run_core.py",
+    "bytes": 5131,
+    "sha256": "07e6d0bd51d2b91588add648dc5da86c763a37a731c87094630e532b59ac86bc",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/run_remaining.py",
+    "bytes": 1109,
+    "sha256": "f1a8ce88da0d390d36ad52049916a053974cf48b8d612ae3b21e37986585a5af",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/run_ridge.py",
+    "bytes": 5946,
+    "sha256": "1df912477986e9185cc0f2580c481d194f07e4e0376d17aa9556cf933866f68c",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/run_spatial.py",
+    "bytes": 2386,
+    "sha256": "4980be03f42f7194176e56b94218f2808f8cd79ddae21126375898832db81903",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/runtime_check.py",
+    "bytes": 744,
+    "sha256": "1fb46761816b76edb3a7afaeec8c59bc151ffd0e54559d53cdad58b4631d29e6",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/simplified_detector.py",
+    "bytes": 833,
+    "sha256": "65a09d69948f85465552c376181ca56b6e73b010ba04eba5d0599724a3b0c719",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/sparse_engine.py",
+    "bytes": 6462,
+    "sha256": "ec313b50913c7074397449f27e5a351362cb2f46e21b20dbcb7388b0d4bb59a2",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/verify_integrity.py",
+    "bytes": 1409,
+    "sha256": "2b15e3217221b0923b2a2172051300be610b108b7f3896d00d8ff61e5dd602fa",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/verify_results.py",
+    "bytes": 4494,
+    "sha256": "9fbf7e1dcda82b19fc8e7db9e3526ceb2bbf33ebbc60ad3bd75ac47c0f6570bf",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "src/verify_spatial_records.py",
+    "bytes": 1870,
+    "sha256": "7b5f22848a97004990ab7e4a50641046a37f191c5297f1a8578a6f158dc46e7f",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "tools/audit_release.py",
+    "bytes": 2803,
+    "sha256": "99ab6d3b84b231e18aeb1aa28c680dddfc370e6a2a44f53e05fd3f06ceba4648",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "tools/verify_dataset.py",
+    "bytes": 3693,
+    "sha256": "18a6c96592c57355fc09b2e66cbef566edba5aa315c491e0ef40cf512216a5c7",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/dataset.json",
+    "bytes": 299,
+    "sha256": "724e9105d8770592fdb0bb53e30bb2328abf1c742091352ba1a249470ae3cea9",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/dependency_origins.json",
+    "bytes": 1148,
+    "sha256": "5516b0639d842e602f8df00c2b551a07f090a023937ea567d9fa615175c8c7e5",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/figure7.json",
+    "bytes": 858,
+    "sha256": "2f625f65c742236ec33370d33a105b20fcd48044053f24fdac6d42d53dee0b40",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/gitignore.json",
+    "bytes": 314,
+    "sha256": "137546c85fada119dd0a161d3c1d5936e4f806483dca9fd6bf1ef9dab32640f0",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/implementation_preservation.json",
+    "bytes": 2292,
+    "sha256": "3114facce536a8d9a2be25b8dcc715cb1cfe3ff570d47eae0e449ded7d8f4cde",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/main_reproduction.json",
+    "bytes": 5702,
+    "sha256": "1ebaa0677a00c6696177c8a00915d850f356fc69b3fecc4d0091211d3332f72d",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/package_checks.json",
+    "bytes": 508,
+    "sha256": "61d51431906332b7ed0ae8755b23d96c7d281a9f6e2b549d12f9f7dafb406dc3",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/pixel_model_bridge.json",
+    "bytes": 1144,
+    "sha256": "0405aec1e5555064626d594cc7ec789a086418a2ce9899abc2aac28acafdbf1b",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/pixel_reproduction.json",
+    "bytes": 387,
+    "sha256": "b2d053a2c192f854c63d02c4570731ecf79e50f6a0001379c6bd09747a1b2935",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/portability.json",
+    "bytes": 348,
+    "sha256": "edb98d6dc1e43c72d91f6a02ce0dcdf1711ffed13a9a53df0cf15afe9b9af7ed",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/public_release_checks.json",
+    "bytes": 1043,
+    "sha256": "f6e0f4045fbd453608d010d316cc42dc78fb34b2ad2bce9e96e110b1f23e0409",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/reference_results.json",
+    "bytes": 5668,
+    "sha256": "d307aae7f4080cda2313e2d95a67df50a95085cf8036e749a5815a05fc524c1a",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/release_scan.json",
+    "bytes": 296,
+    "sha256": "067bdedb342e4d7d26cc9271160232c9468b9b9732b32015313581ba59aac0f3",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/reproduction_summary.json",
+    "bytes": 1381,
+    "sha256": "60bc309bc19afa100ab13ade23f32ac590ddb4ab24310be0ee2b6b280b038e4b",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/roi34_reproduction.json",
+    "bytes": 392,
+    "sha256": "b9b7b879543610aad23ec10517c6314e894fd56ea03595d1bc115910f7f67816",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/roi35_reproduction.json",
+    "bytes": 392,
+    "sha256": "471932164c30d0d88cf8c144f3dd72e39df8b76de82c232efe780b151af99395",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/source_preservation.json",
+    "bytes": 141,
+    "sha256": "5a516d58da8871da77ebe9352b84b5d7535eb6f186cd8dc8ddae38d956abfb35",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/spatial_records.json",
+    "bytes": 1985,
+    "sha256": "119032751cc943993ec76725a110f74c475c987fdbbcc47a770c577a777085ea",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/spatial_reproduction.json",
+    "bytes": 188,
+    "sha256": "5c7a936da1e9122c9469a142850b01f9e73d48ebe225ae0d5a55e28f874ae77b",
+    "release_status": "code_or_documentation_candidate"
+  },
+  {
+    "path": "validation/split_audit.json",
+    "bytes": 631,
+    "sha256": "2735419de8903e9bbd6a24fb921eb2eeb1681000f900c0ccf6b7c952940af031",
+    "release_status": "code_or_documentation_candidate"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "python_files_parsed": 31,
+  "relative_document_links_checked": 4,
+  "public_text_crlf_files": 19,
+  "git_line_ending_conversion_disabled": true,
+  "new_files_documented": 53,
+  "copied_or_extracted_entries": 236,
+  "byte_identical_copies": 222,
+  "adapted_copies": 14,
+  "raw_file_count": 92,
+  "static_inventory_excludes": [
+    "provenance/file_inventory.json (does not hash itself)",
+    "results/runs/",
+    ".venv-*",
+    "__pycache__"
+  ],
+  "no_project_git_directory": true
+}

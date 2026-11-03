@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "text_files_scanned": 196,
+  "findings": [],
+  "scope": "Project source, documentation, metadata, reference tables; ignored runtimes and generated runs excluded",
+  "limitations": "Pattern-based screening is not a guarantee that every possible secret has been detected"
+}

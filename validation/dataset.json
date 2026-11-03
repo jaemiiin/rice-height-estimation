@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "images": 92,
+  "regions": 9,
+  "site_date_references": 33,
+  "strips": 552,
+  "feature_tables": 5,
+  "candidates": 37,
+  "raw_hashes_checked": 92,
+  "raw_total_bytes": 649901769,
+  "raw_largest_file_bytes": 10771519,
+  "original_measurements_invented": false
+}

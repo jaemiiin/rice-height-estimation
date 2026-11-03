@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "variant": "34",
+  "analyses": 8,
+  "OOF_predictions": 736,
+  "compared_tables": [
+    "oof_predictions.csv",
+    "results_common_features.csv",
+    "results_independent_selection.csv",
+    "selected_features_by_fold.csv",
+    "regional_results.csv",
+    "loss_identity_checks.csv"
+  ],
+  "fresh_model_fitting": true,
+  "fresh_pixel_extraction": false
+}
