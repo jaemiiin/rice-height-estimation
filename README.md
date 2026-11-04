@@ -4,6 +4,25 @@ Code and data for **An Interpretable Framework for Rice Plant-Height Estimation 
 
 The method uses continuous ExG weighting, six adaptive vertical strips, 37 candidate features, and nested regional Lasso 1SE → backward BIC → strip-level OLS. Six strip predictions are averaged per image. The primary evaluation leaves each of nine regions out once; feature selection, scaling, and fitting use only the corresponding training regions. Image-based models do not use acquisition date/time or external height/depth information.
 
+## Get the source
+
+Clone the repository and enter its root directory before running the commands below:
+
+```bash
+git clone https://github.com/jaemiiin/rice-height-estimation.git
+cd rice-height-estimation
+```
+
+Alternatively, download the **Source code (zip)** from the [Rice Height Dataset Release](https://github.com/jaemiiin/rice-height-estimation/releases/tag/rice-height-dataset), extract it, and open a terminal in the extracted directory containing `README.md`.
+
+The distribution has three parts:
+
+- **Source code archives:** the cleaned code at the `rice-height-dataset` tag, including the numbered analysis scripts and shared helpers, both requirements files, `data/ground_truth.csv`, README, and Git configuration files. No original images, extra metadata tables, feature matrices, or experiment results are included.
+- **Uploaded Release assets:** `rice-height-images.zip` (92 original JPEGs) and `SHA256SUMS.txt`.
+- **Generated outputs:** feature values, derived metadata such as strip coordinates, models, and experiment results are created when the analysis runs. Keep them under `results/`; `data/metadata/` and `data/processed/` are also ignored by Git.
+
+Earlier tracked metadata, features, and results remain in past Git commits because Git history is preserved. They are excluded from the current main tree and the source archives at this Release tag.
+
 ## Data
 
 The National Institute of Crop Science, Rural Development Administration supplied **92 original 3840 × 2160 RGB images** and **33 site-date reference heights** across nine regions. Images from the same region and date share one height in centimetres. `data/ground_truth.csv` contains the original filename, region, acquisition date/time, site-date identifier, reference height, dimensions, and original SHA-256 checksum. Times are the acquisition hours encoded in the filenames and described in the manuscript (local Korean time); they are metadata only.
@@ -121,11 +140,11 @@ The full run produces 24 analyses and 2,208 image-level out-of-fold predictions.
 - `results/partition_*_summary.csv`: coverage and boundary displacement summaries.
 - `verification.json`: actual metrics and checks against the reported rounded scores.
 
-The broader 71-condition spatial exploration and later ROI34/ROI35 follow-ups are outside the current manuscript workflow. Their previous code, inputs and results remain in [Git history](https://github.com/jaemiiin/rice-height-estimation/tree/160f48a5b2e0cc52b9bf706f0cefed5fbbd793d4), rather than in the image-only dataset ZIP. They are not substituted for the 37-feature primary study. Historical manual boundary inspection is not automated by these scripts.
+The broader 71-condition spatial exploration and later ROI34/ROI35 follow-ups are outside the current manuscript workflow. They are not substituted for the 37-feature primary study. Historical manual boundary inspection is not automated by these scripts.
 
 ## Availability and citation
 
-Data and code publication permissions have been confirmed by the repository owner. A general reuse license is still to be specified by the rights holders. The manuscript DOI and final publication details will be added when assigned; no dataset DOI is currently claimed.
+Data and code publication permissions have been confirmed by the repository owner. No general reuse license has been assigned for either the code or the data; reuse terms remain to be specified by the rights holders. The manuscript DOI and final publication details will be added when assigned; no dataset DOI is currently claimed.
 
 Na J, Kwon D, Chang J-K, Do Y, Hong S-J, Kim K-M, Choi H. *An Interpretable Framework for Rice Plant-Height Estimation from Single Top-View RGB Images Using Continuous ExG Weighting*. Manuscript prepared for submission to Plant Methods.
 

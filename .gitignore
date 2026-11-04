@@ -2,6 +2,8 @@
 /data/images/
 
 # Recomputed features, models, predictions, inspection files and downloads.
+/data/metadata/
+/data/processed/
 /results/
 /.cache/
 /.local/
