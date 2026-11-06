@@ -1,72 +1,35 @@
 # Rice plant-height estimation
 
-Code and data for **An Interpretable Framework for Rice Plant-Height Estimation from Single Top-View RGB Images Using Continuous ExG Weighting**, a manuscript prepared for *Plant Methods*.
+Code and data for **An Interpretable Framework for Rice Plant-Height Estimation from Single Top-View RGB Images Using Continuous ExG Weighting**, a manuscript being prepared for submission to *Plant Methods*.
 
-The method uses continuous ExG weighting, six adaptive vertical strips, 37 candidate features, and nested regional Lasso 1SE → backward BIC → strip-level OLS. Six strip predictions are averaged per image. The primary evaluation leaves each of nine regions out once; feature selection, scaling, and fitting use only the corresponding training regions. Image-based models do not use acquisition date/time or external height/depth information.
+The pipeline applies continuous ExG weighting → six adaptive strips → 37 candidate features → Lasso 1SE → backward BIC → strip-level OLS → the mean of six strip predictions per image.
 
-## Get the source
+Nine-region leave-one-region-out validation performs feature selection, standardization, and model fitting within each fold's training regions. Image-based models do not use acquisition date or time as inputs.
 
-Clone the repository and enter its root directory before running the commands below:
+Primary manuscript performance:
+
+| R² | RMSE (cm) | MAE (cm) |
+|---|---|---|
+| 0.9000 | 6.67 | 5.06 |
+
+## Data
+
+The National Institute of Crop Science, Rural Development Administration supplied 92 original RGB images (3840 × 2160 pixels) from nine regions, with measured heights for 33 region–date groups. Images from the same region and date share the same reference plant height.
+
+The [ground-truth table](data/ground_truth.csv) maps filenames to regions, acquisition dates/times, reference heights, dimensions, and image checksums.
+
+Download [rice-height-images.zip](https://github.com/jaemiiin/rice-height-estimation/releases/download/rice-height-dataset/rice-height-images.zip) from the [Rice Height Dataset Release](https://github.com/jaemiiin/rice-height-estimation/releases/tag/rice-height-dataset). Automatic downloading verifies the ZIP and individual image SHA-256 checksums, then installs the 92 JPEGs under `data/images/`. For manual installation, extract the image ZIP into the repository root.
+
+## Installation
+
+Clone the repository and enter its root directory:
 
 ```bash
 git clone https://github.com/jaemiiin/rice-height-estimation.git
 cd rice-height-estimation
 ```
 
-Alternatively, download the **Source code (zip)** from the [Rice Height Dataset Release](https://github.com/jaemiiin/rice-height-estimation/releases/tag/rice-height-dataset), extract it, and open a terminal in the extracted directory containing `README.md`.
-
-The distribution has three parts:
-
-- **Source code archives:** the cleaned code at the `rice-height-dataset` tag, including the numbered analysis scripts and shared helpers, both requirements files, `data/ground_truth.csv`, README, and Git configuration files. No original images, extra metadata tables, feature matrices, or experiment results are included.
-- **Uploaded Release assets:** `rice-height-images.zip` (92 original JPEGs) and `SHA256SUMS.txt`.
-- **Generated outputs:** feature values, derived metadata such as strip coordinates, models, and experiment results are created when the analysis runs. Keep them under `results/`; `data/metadata/` and `data/processed/` are also ignored by Git.
-
-Earlier tracked metadata, features, and results remain in past Git commits because Git history is preserved. They are excluded from the current main tree and the source archives at this Release tag.
-
-## Data
-
-The National Institute of Crop Science, Rural Development Administration supplied **92 original 3840 × 2160 RGB images** and **33 site-date reference heights** across nine regions. Images from the same region and date share one height in centimetres. `data/ground_truth.csv` contains the original filename, region, acquisition date/time, site-date identifier, reference height, dimensions, and original SHA-256 checksum. Times are the acquisition hours encoded in the filenames and described in the manuscript (local Korean time); they are metadata only.
-
-Original images are in the [Rice Height Dataset Release](https://github.com/jaemiiin/rice-height-estimation/releases/tag/rice-height-dataset). Download and install them with any Python 3.9+ interpreter; this command needs no third-party packages:
-
-```bash
-python code/run_all.py --download-only
-```
-
-The approximately 620 MiB [rice-height-images.zip](https://github.com/jaemiiin/rice-height-estimation/releases/download/rice-height-dataset/rice-height-images.zip) contains **only 92 original JPEG images**, at `data/images/<region>/<filename>.jpg`. It contains no CSV, JSON, features, or experiment results. The downloader verifies the archive and every image against `data/ground_truth.csv`, then installs the images at those locations without overwriting differing existing files. For manual installation, extract the ZIP into the repository root. Reference heights remain in the main repository's `data/ground_truth.csv`; features and predictions are regenerated by the code.
-
-For an offline ZIP, use `python code/run_all.py --download-only --archive /path/to/rice-height-images.zip`. Its SHA-256 is `f0e12041425cfa267a71234c450f15cd91b233019ea3ee4cc42e3893b19387d1`, also provided in [SHA256SUMS.txt](https://github.com/jaemiiin/rice-height-estimation/releases/download/rice-height-dataset/SHA256SUMS.txt). The two uploaded Release assets are the image ZIP and its checksum file; GitHub's automatically generated Source code archives are separate from the image dataset.
-
-## Repository structure
-
-```text
-rice-height-estimation/
-├── README.md
-├── requirements.txt             # analysis environment
-├── requirements-pixels.txt      # separate image-processing environment
-├── .gitignore
-├── .gitattributes
-├── data/
-│   ├── images/                  # downloaded originals; ignored by Git
-│   └── ground_truth.csv
-└── code/
-    ├── step01_preprocessing.py
-    ├── step02_strip_detection.py
-    ├── step03_feature_extraction.py
-    ├── step04_feature_selection.py
-    ├── step05_model_fitting.py
-    ├── step06_evaluation.py
-    ├── step07_comparisons.py
-    ├── run_all.py
-    ├── _common.py               # feature order, I/O, metrics, runtime checks
-    ├── _data.py                 # metadata and verified image downloads
-    ├── _selection_solver.py     # shared, preserved Lasso/BIC numerical kernels
-    └── _baseline_models.py      # shared, preserved comparison model kernels
-```
-
-## Installation
-
-The recorded environments are **Python 3.9.18** for pixels (NumPy 1.26.4, pandas 2.1.4, SciPy 1.13.1, OpenCV 4.11.0) and **Python 3.12.14** for analysis (NumPy 2.3.5, pandas 3.0.1, SciPy 1.18.1, scikit-learn 1.9.1). They intentionally remain separate. Install both Python versions, then create the environments:
+Install **Python 3.9.18** for image processing and **Python 3.12.14** for analysis. Create separate environments using [requirements-pixels.txt](requirements-pixels.txt) and [requirements.txt](requirements.txt):
 
 ```bash
 python3.9 -m venv .venv-pixels
@@ -75,11 +38,17 @@ python3.12 -m venv .venv-analysis
 .venv-analysis/bin/python -m pip install -r requirements.txt
 ```
 
-On Windows, create them with `py -3.9 -m venv .venv-pixels` and `py -3.12 -m venv .venv-analysis`, and replace `bin/python` in commands with `Scripts/python.exe`. The runtime checks require the recorded patch/package versions. Validation uses these installed environments; a fresh installation on every platform is not claimed.
+On Windows, create them with `py -3.9 -m venv .venv-pixels` and `py -3.12 -m venv .venv-analysis`; replace `bin/python` with `Scripts/python.exe` in installation commands. The code checks the specified Python patch versions and package versions before processing.
 
-## Run the complete analysis
+## Run
 
-From the repository root:
+Run commands from the repository root. To download only the original images, use Python 3.9 or later; no third-party packages are required:
+
+```bash
+python code/run_all.py --download-only
+```
+
+Run the complete workflow, including the primary analysis and comparison experiments (24 analyses):
 
 ```bash
 .venv-analysis/bin/python code/run_all.py --download --pixels-python .venv-pixels/bin/python --out results/main
@@ -91,61 +60,37 @@ Windows PowerShell:
 .venv-analysis/Scripts/python.exe code/run_all.py --download --pixels-python .venv-pixels/Scripts/python.exe --out results/main
 ```
 
-Use a **new output directory** for each complete run. `--images`, `--ground-truth`, and `--analysis-python` can specify other locations. No user-specific absolute paths are embedded in the code. Results, caches, features, and inspection outputs are generated under the selected output directory and are ignored by Git when kept in `results/`.
+Use a **new output directory for every complete run**. The following paths are relative to the selected output directory (`results/main` above):
 
-## Stages and individual execution
-
-| Step | Role |
+| Output | Contents |
 |---|---|
-| 01 | Decode RGB; clipped ExG; float32 continuous weighting with the original uint8 conversion; raw and Otsu-masked RGB. |
-| 02 | Column ExG profile, Gaussian smoothing (σ = 20), local minima/edge candidates, three strips from each end; matched-coverage and full-width equal partitions. |
-| 03 | Original 37 feature formulas per strip, plus NExGR for the fixed vegetation-index baseline; five representation/partition matrices and regenerated coordinates. |
-| 04 | Image-mean features; 200-penalty Lasso paths, regional jackknife 1SE rule, and greedy backward BIC inside each outer training fold. |
-| 05 | Strip OLS, reusable image OLS, training-only scaling, held-region predictions, and image averaging. |
-| 06 | Overall/regional R², RMSE and MAE, comparison with reported rounded scores, and result tables. |
-| 07 | Raw/Otsu/continuous; adaptive/matched/full-width; image/strip OLS and Ridge; mean, RGB-index, Elastic Net, PCR, kNN and MLP baselines; post hoc six-feature reference/ablations; equal-site-date weighting and the separate date-only diagnostic. |
+| `inputs/` | Extracted features and strip coordinates |
+| `runs/continuous/` | Primary fold selections, fitted models, and predictions |
+| `results/metrics.csv` | Performance across all 24 analyses |
+| `results/predictions.csv` | Image-level out-of-fold predictions |
+| `verification.json` | Calculated metrics and checks against manuscript scores |
 
-Steps 01–03 run sequentially **within each image** to avoid saving large intermediate raster arrays. Step 03 calls the actual functions in steps 01 and 02; it requires no saved features or strip coordinates. For individual execution:
+The six-feature reference and ablation analyses are post hoc; the date-only analysis is separate from the image-based models.
 
-```bash
-.venv-pixels/bin/python code/step03_feature_extraction.py --out results/manual/inputs
-.venv-analysis/bin/python code/step04_feature_selection.py --out results/manual
-.venv-analysis/bin/python code/step05_model_fitting.py --out results/manual
-.venv-analysis/bin/python code/step06_evaluation.py --out results/manual
-.venv-analysis/bin/python code/step07_comparisons.py --out results/manual
-```
+## Code
 
-Steps 01 and 02 can also save one-image inspection outputs:
+Files are located in `code/`:
 
-```bash
-.venv-pixels/bin/python code/step01_preprocessing.py --image data/images/Andong/KPA-CT-2024-0004.00.2024061508.jpg --out results/inspection/preprocessed.npz
-.venv-pixels/bin/python code/step02_strip_detection.py --preprocessed results/inspection/preprocessed.npz --out results/inspection/strips.json
-```
+| File | Role |
+|---|---|
+| `run_all.py` | Manage downloads, paths, environments, and execution order |
+| `step01_preprocessing.py` | Load RGB and construct ExG-weighted, raw, and Otsu RGB representations |
+| `step02_strip_detection.py` | Detect adaptive strip boundaries and comparison partitions |
+| `step03_feature_extraction.py` | Extract the 37 candidate features per strip |
+| `step04_feature_selection.py` | Perform training-fold Lasso 1SE and backward BIC selection |
+| `step05_model_fitting.py` | Fit OLS models and average strip predictions by image |
+| `step06_evaluation.py` | Calculate overall/regional metrics and verify manuscript scores |
+| `step07_comparisons.py` | Run representation, partition, model, reference, and ablation comparisons |
 
-The original feature arithmetic, zero-denominator handling, candidate order, solver/tie tolerances, regional splits, and hyperparameters are preserved. MLP uses seed 7; other main fits are deterministic. The six recurrent features are defined **post hoc** across the nine primary selections; `reference_*` and `ablation_*` results are not independent validation of selecting those six features. The date-only diagnostic is separate from the date-excluded image models.
+Step 03 calls functions from steps 01 and 02 for each image. Files beginning with `_` provide shared functionality.
 
-Implementation note: the final archived detector passes `prominence=0.02` to `find_peaks`; the manuscript also describes `distance=30`. Checking all 92 images confirmed identical minima, maxima, and retained coordinates with that additional distance setting. This refactor preserves the archived implementation; equivalence on other images is not assumed.
-
-## Outputs and expected results
-
-Primary manuscript result: **R² = 0.9000, RMSE = 6.67 cm, MAE = 5.06 cm**. Reported scores are used only for checking results, never for fitting or changing the computation.
-
-The reorganized pipeline was rerun from all 92 original images on 2026-11-03 in the recorded Windows environments. All five 37-feature matrices and retained coordinates matched the archived numerical values exactly. All 2,208 predictions across 24 analyses matched the pre-refactor predictions exactly. The primary result was R² **0.9000213961**, RMSE **6.6666087686 cm**, and MAE **5.0575944397 cm**; all 441 Elastic Net fits converged. The complete run took approximately 15.5 minutes on the validation machine.
-
-The full run produces 24 analyses and 2,208 image-level out-of-fold predictions. Key files under the output directory:
-
-- `inputs/`: regenerated features and coordinates.
-- `runs/continuous/`: primary fold selections, diagnostics, OLS models, strip and image predictions.
-- `results/metrics.csv` and `results/predictions.csv`: all 24 analyses, including the clearly labelled post hoc analyses.
-- `results/partition_*_summary.csv`: coverage and boundary displacement summaries.
-- `verification.json`: actual metrics and checks against the reported rounded scores.
-
-The broader 71-condition spatial exploration and later ROI34/ROI35 follow-ups are outside the current manuscript workflow. They are not substituted for the 37-feature primary study. Historical manual boundary inspection is not automated by these scripts.
-
-## Availability and citation
-
-Data and code publication permissions have been confirmed by the repository owner. No general reuse license has been assigned for either the code or the data; reuse terms remain to be specified by the rights holders. The manuscript DOI and final publication details will be added when assigned; no dataset DOI is currently claimed.
+## Citation and reuse
 
 Na J, Kwon D, Chang J-K, Do Y, Hong S-J, Kim K-M, Choi H. *An Interpretable Framework for Rice Plant-Height Estimation from Single Top-View RGB Images Using Continuous ExG Weighting*. Manuscript prepared for submission to Plant Methods.
 
-Code: [jaemiiin/rice-height-estimation](https://github.com/jaemiiin/rice-height-estimation). Data: [Rice Height Dataset](https://github.com/jaemiiin/rice-height-estimation/releases/tag/rice-height-dataset).
+Final publication details will be added when confirmed. A general reuse license has not yet been assigned to the code or data.
