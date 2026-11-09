@@ -24,7 +24,7 @@ def features(crop,x1,x2,width):
     idx['COM']=0.25*(2*g-r-b)+0.30*((2*g-r-b)-(1.4*r-g))+0.33*(0.441*R-0.811*G+0.385*B+18.78745)+0.12*idx['VEG']
     idx['ChOL_log_sig']=1/(1+np.exp(-(G-R/3-B/3)/255))
     gray=cv2.cvtColor(crop,cv2.COLOR_RGB2GRAY);sx=cv2.Sobel(gray,cv2.CV_64F,1,0,ksize=3);sy=cv2.Sobel(gray,cv2.CV_64F,0,1,ksize=3)
-    complexity=np.hypot(sx,sy).sum()/(crop.shape[0]*crop.shape[1]+1e-8)
+    complexity=np.hypot(sx,sy).sum()/(crop.shape[0]*crop.shape[1])
     start,end=sorted([abs(x1-width/2)/(width/2),abs(x2-width/2)/(width/2)])
     out=dict(start=start,end=end,complexity=complexity/255,mean_R=R.mean()/255,mean_G=G.mean()/255,mean_B=B.mean()/255)
     out.update({k:float(v.mean()) for k,v in idx.items()});out['IPCAS']/=255
