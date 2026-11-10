@@ -41,7 +41,7 @@ def run_core():
     counts=binary[FEATURES].sum();cmax=int(counts.max());ref=[f for f in FEATURES if counts[f]==cmax]
     csv([dict(feature=f,count=int(counts[f]),frequency=float(counts[f]/9),maximum_group=f in ref) for f in FEATURES],ROOT/'results/recurrence_all37.csv')
     js(dict(maximum_count=cmax,reference=ref,rule='all features tied at the maximum observed recurrence'),ROOT/'results/reference_definition.json')
-    reference=[];checks=[]
+    reference=[]
     for unit,agg in [('strip','mean'),('image','mean')]:
         p,models=pred_ols(data,ref,unit,agg);name=f'reference_{unit}_{agg}';save(p,name,models);reference.append(dict(mode=name,**summarize(p)))
     csv(reference,ROOT/'results/reference_metrics.csv')
@@ -100,14 +100,14 @@ def run_ridge(case,mode):
     if (folder/'pooled_metrics.csv').exists():return
     strips=read(ROOT/'inputs'/f'features_{case}.csv')
     unit=images(strips) if mode=='image' else strips
-    csv(unit,folder/'training_units.csv');regions=sorted(unit.Region.unique());paths={};meta=[]
+    csv(unit,folder/'training_units.csv');regions=sorted(unit.Region.unique());paths={}
     for size in [7,8]:
         for ids in itertools.combinations(range(9),size):
             mask=sum(1<<i for i in ids);names=[regions[i] for i in ids];train=unit[unit.Region.isin(names)]
             p=fit_path(train);paths[mask]=p
             np.savez_compressed(cache/f'{mask:03d}.npz',**p)
             row=dict(mask=mask,training_regions=names,n_training_units=len(train),n_training_images=train.groupby(['Region',ID]).ngroups,unit=mode,all_37_features=FEATURES,intercept_penalized=False)
-            js(row,cache/f'{mask:03d}.json');meta.append(row)
+            js(row,cache/f'{mask:03d}.json')
     records=[];folds=[];curves=[];boundaries=[];models=[];strip_preds=[];inner_preds=[]
     for held,region in enumerate(regions):
         outer=511^(1<<held);parts=[]
@@ -179,7 +179,7 @@ def run_baselines():
                     score=summarize(pd.concat(parts,ignore_index=True))['RMSE']
                     curves.append(dict(method=method,held_region=r,parameter=v,RMSE=score))
                     if best is None or score<best:best=score;param=v
-                # Same candidate ordering/exact-tie rule as archived inner_select.
+                # The first candidate is retained on exact ties.
             if method=='mean':pr=np.repeat(train[TARGET].mean(),len(test))
             elif method=='rgb':pr=ml.fit_ols(train[cols],train[TARGET],test[cols])
             elif method=='mlp':pr=ml.fit_mlp(train[cols].to_numpy(),train[TARGET].to_numpy(),test[cols].to_numpy())

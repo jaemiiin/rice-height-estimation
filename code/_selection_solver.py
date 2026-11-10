@@ -2,15 +2,11 @@
 import os
 for variable in ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS']:os.environ[variable]='1'
 from pathlib import Path
-import sys
 ROOT=Path(__file__).resolve().parents[1]
-import hashlib
-import itertools
 import json
 import time
 import warnings
 import numpy as np
-import pandas as pd
 from sklearn.linear_model import lars_path_gram
 
 ALPHAS=np.logspace(-4,1,200)[::-1]

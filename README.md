@@ -68,7 +68,7 @@ Use a **new output directory for every complete run**. The following paths are r
 | `runs/continuous/` | Primary fold selections, fitted models, and predictions |
 | `results/metrics.csv` | Performance across all 24 analyses |
 | `results/predictions.csv` | Image-level out-of-fold predictions |
-| `verification.json` | Calculated metrics and checks against manuscript scores |
+| `verification.json` | Calculated metrics and runtime/data integrity check status |
 
 The six-feature reference and ablation analyses are post hoc; the date-only analysis is separate from the image-based models.
 
@@ -84,7 +84,7 @@ Files are located in `code/`:
 | `step03_feature_extraction.py` | Extract the 37 candidate features per strip |
 | `step04_feature_selection.py` | Perform training-fold Lasso 1SE and backward BIC selection |
 | `step05_model_fitting.py` | Fit OLS models and average strip predictions by image |
-| `step06_evaluation.py` | Calculate overall/regional metrics and verify manuscript scores |
+| `step06_evaluation.py` | Calculate overall/regional metrics and check data integrity |
 | `step07_comparisons.py` | Run representation, partition, model, reference, and ablation comparisons |
 
 Step 03 calls functions from steps 01 and 02 for each image. Files beginning with `_` provide shared functionality.

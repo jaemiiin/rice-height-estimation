@@ -1,8 +1,5 @@
 """Final baseline fitting functions, same algorithms; final Elastic Net maximum sweeps = 100000."""
 import numpy as np
-import pandas as pd
-REGION="Region"
-TARGET="shoot_length_cm"
 
 def standardize(train, test):
     train = np.asarray(train, dtype=float)
@@ -11,17 +8,6 @@ def standardize(train, test):
     sd = train.std(axis=0)
     sd[sd == 0] = 1.0
     return (train - mu) / sd, (test - mu) / sd
-
-def metrics(y_true, y_pred):
-    y_true = np.asarray(y_true, dtype=float)
-    y_pred = np.asarray(y_pred, dtype=float)
-    sse = np.sum((y_true - y_pred) ** 2)
-    sst = np.sum((y_true - y_true.mean()) ** 2)
-    return {
-        "R2": 1 - sse / sst,
-        "RMSE": float(np.sqrt(np.mean((y_true - y_pred) ** 2))),
-        "MAE": float(np.mean(np.abs(y_true - y_pred))),
-    }
 
 def fit_ols(x_train, y_train, x_test):
     xs_train, xs_test = standardize(x_train, x_test)
@@ -143,31 +129,3 @@ def fit_mlp(x_train, y_train, x_test, hidden=8, l2=0.01, lr=0.015, epochs=2500, 
 
     pred_test = np.tanh(xs_test @ w1 + b1) @ w2 + b2
     return pred_test.ravel() * y_sd + y_mean
-
-def inner_select(train_df, features, model_name, candidates):
-    regions = sorted(train_df[REGION].unique())
-    best_score = None
-    best_param = candidates[0]
-    for param in candidates:
-        preds = []
-        actuals = []
-        for region in regions:
-            inner_train = train_df[train_df[REGION] != region]
-            inner_test = train_df[train_df[REGION] == region]
-            if model_name == "ridge":
-                pred = fit_ridge(inner_train[features], inner_train[TARGET], inner_test[features], param)
-            elif model_name == "elastic":
-                pred = fit_elastic_net(inner_train[features], inner_train[TARGET], inner_test[features], param)
-            elif model_name == "pcr":
-                pred = fit_pcr(inner_train[features], inner_train[TARGET], inner_test[features], param)
-            elif model_name == "knn":
-                pred = fit_knn(inner_train[features], inner_train[TARGET], inner_test[features], param)
-            else:
-                raise ValueError(model_name)
-            preds.extend(pred)
-            actuals.extend(inner_test[TARGET].values)
-        score = metrics(actuals, preds)["RMSE"]
-        if best_score is None or score < best_score:
-            best_score = score
-            best_param = param
-    return best_param
